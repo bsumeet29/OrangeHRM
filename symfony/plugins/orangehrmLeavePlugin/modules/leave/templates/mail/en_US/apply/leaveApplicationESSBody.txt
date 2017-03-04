@@ -1,0 +1,13 @@
+Hi %recipientFirstName%,
+<br /><br />
+You have applied for leave. The leave details:
+<br />
+
+
+%leaveDetails%      
+
+<br />
+
+Thank you.
+<br /><br />
+This is an automated notification.

@@ -1,0 +1,14 @@
+Hi %recipientFirstName%,
+<br /><br />
+%performerFullName% has done the following changes to leave request of %applicantFullName%. The leave details:
+<br />
+%leaveDetails%
+
+<br />
+
+You were sent this mail, as you are a superwiser assigned for %applicantFullName%.
+<br /><br />
+
+Thank you.
+<br /><br />
+This is an automated notification.

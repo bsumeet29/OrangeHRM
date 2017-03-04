@@ -1,0 +1,11 @@
+Hi %recipientFirstName%,
+<br /><br />
+%performerFullName% has done the following changes to your leave request for following days:
+<br />
+%leaveDetails%
+
+<br />
+
+Thank you.
+<br /><br />
+This is an automated notification.

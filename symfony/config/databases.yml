@@ -1,0 +1,15 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;port=3306;dbname=perennial_hrm'
+      username: root
+      password: "root"
+      attributes: { export: tables }
+test:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;port=3306;dbname=test_perennialhrm_mysql'
+      username: orangehrm
+      password: "root"

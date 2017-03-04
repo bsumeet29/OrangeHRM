@@ -1,0 +1,15 @@
+Hi %recipientFirstName%,
+<br />
+<br />
+%performerFullName% has conditionally approved leave request of %applicantFullName%. The leave details:
+
+<br />
+%leaveDetails%
+
+<br />
+
+You were sent this mail, as you have subscribed to PerennialHRM leave approvals.
+<br /><br />
+Thank you.
+<br /><br />
+This is an automated notification.

@@ -1,0 +1,11 @@
+Hi %recipientFirstName%,
+<br /><br />
+You has applied for leave. The leave is conflict with your Subordinate
+<br />
+
+%conflictLeaveData%
+
+<br />
+Thank you.
+<br /><br />
+This is an automated notification.

@@ -1,0 +1,1588 @@
+Wed 22 Feb 2017 04:16:41 AM IST,652 [2000] ERROR leave.LeaveApplicationService - Exception while saving leave:exception 'DaoException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'contact_no' in 'field list'' in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/dao/LeaveRequestDao.php:104
+Stack trace:
+#0 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveRequestService.php(208): LeaveRequestDao->saveLeaveRequest(Object(LeaveRequest), Array, false)
+#1 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(131): LeaveRequestService->saveLeaveRequest(Object(LeaveRequest), Array, false)
+#2 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(74): LeaveApplicationService->saveLeaveRequest(Object(LeaveParameterObject))
+#3 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/applyLeaveAction.class.php(123): LeaveApplicationService->applyLeave(Object(LeaveParameterObject))
+#4 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(952): applyLeaveAction->execute(Object(sfWebRequest))
+#5 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmExecutionFilter.php(36): sfExecutionFilter->executeAction(Object(applyLeaveAction))
+#6 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(947): orangehrmExecutionFilter->executeAction(Object(applyLeaveAction))
+#7 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(933): sfExecutionFilter->handleAction(Object(sfFilterChain), Object(applyLeaveAction))
+#8 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfExecutionFilter->execute(Object(sfFilterChain))
+#9 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfCommonFilter.class.php(29): sfFilterChain->execute()
+#10 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfCommonFilter->execute(Object(sfFilterChain))
+#11 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmPostExecutionFilter.php(22): sfFilterChain->execute()
+#12 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): orangehrmPostExecutionFilter->execute(Object(sfFilterChain))
+#13 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ModuleFilter.php(56): sfFilterChain->execute()
+#14 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ModuleFilter->execute(Object(sfFilterChain))
+#15 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/authorization/filter/ohrmAuthorizationFilter.php(97): sfFilterChain->execute()
+#16 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ohrmAuthorizationFilter->execute(Object(sfFilterChain))
+#17 /var/www/hrm/symfony/apps/orangehrm/lib/filter/SessionInfoFetcherFilter.php(67): sfFilterChain->execute()
+#18 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): SessionInfoFetcherFilter->execute(Object(sfFilterChain))
+#19 /var/www/hrm/symfony/apps/orangehrm/lib/filter/OrangeI18NFilter.php(58): sfFilterChain->execute()
+#20 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): OrangeI18NFilter->execute(Object(sfFilterChain))
+#21 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ExceptionCatcherFilter.php(26): sfFilterChain->execute()
+#22 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ExceptionCatcherFilter->execute(Object(sfFilterChain))
+#23 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfBasicSecurityFilter.class.php(72): sfFilterChain->execute()
+#24 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfBasicSecurityFilter->execute(Object(sfFilterChain))
+#25 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(995): sfFilterChain->execute()
+#26 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfRenderingFilter->execute(Object(sfFilterChain))
+#27 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(665): sfFilterChain->execute()
+#28 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(2352): sfController->forward('leave', 'applyLeave')
+#29 /var/www/hrm/symfony/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#30 /var/www/hrm/symfony/web/index.php(22): sfContext->dispatch()
+#31 {main}
+Wed 22 Feb 2017 04:17:33 AM IST,054 [5840] ERROR leave.LeaveApplicationService - Exception while saving leave:exception 'DaoException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'contact_no' in 'field list'' in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/dao/LeaveRequestDao.php:106
+Stack trace:
+#0 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveRequestService.php(208): LeaveRequestDao->saveLeaveRequest(Object(LeaveRequest), Array, false)
+#1 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(131): LeaveRequestService->saveLeaveRequest(Object(LeaveRequest), Array, false)
+#2 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(74): LeaveApplicationService->saveLeaveRequest(Object(LeaveParameterObject))
+#3 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/applyLeaveAction.class.php(123): LeaveApplicationService->applyLeave(Object(LeaveParameterObject))
+#4 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(952): applyLeaveAction->execute(Object(sfWebRequest))
+#5 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmExecutionFilter.php(36): sfExecutionFilter->executeAction(Object(applyLeaveAction))
+#6 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(947): orangehrmExecutionFilter->executeAction(Object(applyLeaveAction))
+#7 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(933): sfExecutionFilter->handleAction(Object(sfFilterChain), Object(applyLeaveAction))
+#8 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfExecutionFilter->execute(Object(sfFilterChain))
+#9 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfCommonFilter.class.php(29): sfFilterChain->execute()
+#10 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfCommonFilter->execute(Object(sfFilterChain))
+#11 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmPostExecutionFilter.php(22): sfFilterChain->execute()
+#12 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): orangehrmPostExecutionFilter->execute(Object(sfFilterChain))
+#13 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ModuleFilter.php(56): sfFilterChain->execute()
+#14 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ModuleFilter->execute(Object(sfFilterChain))
+#15 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/authorization/filter/ohrmAuthorizationFilter.php(97): sfFilterChain->execute()
+#16 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ohrmAuthorizationFilter->execute(Object(sfFilterChain))
+#17 /var/www/hrm/symfony/apps/orangehrm/lib/filter/SessionInfoFetcherFilter.php(67): sfFilterChain->execute()
+#18 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): SessionInfoFetcherFilter->execute(Object(sfFilterChain))
+#19 /var/www/hrm/symfony/apps/orangehrm/lib/filter/OrangeI18NFilter.php(58): sfFilterChain->execute()
+#20 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): OrangeI18NFilter->execute(Object(sfFilterChain))
+#21 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ExceptionCatcherFilter.php(26): sfFilterChain->execute()
+#22 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ExceptionCatcherFilter->execute(Object(sfFilterChain))
+#23 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfBasicSecurityFilter.class.php(72): sfFilterChain->execute()
+#24 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfBasicSecurityFilter->execute(Object(sfFilterChain))
+#25 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(995): sfFilterChain->execute()
+#26 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfRenderingFilter->execute(Object(sfFilterChain))
+#27 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(665): sfFilterChain->execute()
+#28 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(2352): sfController->forward('leave', 'applyLeave')
+#29 /var/www/hrm/symfony/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#30 /var/www/hrm/symfony/web/index.php(22): sfContext->dispatch()
+#31 {main}
+Wed 22 Feb 2017 04:23:54 AM IST,933 [5831] ERROR filter.ExceptionCatcherFilter - Uncaught Exception: exception 'Doctrine_Record_UnknownPropertyException' with message 'Unknown record property / related component "contact_no" on "LeaveRequest"' in /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record/Filter/Standard.php:44
+Stack trace:
+#0 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record.php(1504): Doctrine_Record_Filter_Standard->filterSet(Object(LeaveRequest), 'contact_no', 9730035236)
+#1 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record.php(1456): Doctrine_Record->_set('contact_no', 9730035236, true)
+#2 [internal function]: Doctrine_Record->set('contact_no', 9730035236)
+#3 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/record/sfDoctrineRecord.class.php(186): call_user_func_array(Array, Array)
+#4 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/AbstractLeaveAllocationService.php(458): sfDoctrineRecord->__call('setContactNo', Array)
+#5 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/AbstractLeaveAllocationService.php(458): LeaveRequest->setContactNo(9730035236)
+#6 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(87): AbstractLeaveAllocationService->generateLeaveRequest(Object(LeaveParameterObject))
+#7 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(74): LeaveApplicationService->saveLeaveRequest(Object(LeaveParameterObject))
+#8 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/applyLeaveAction.class.php(123): LeaveApplicationService->applyLeave(Object(LeaveParameterObject))
+#9 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(952): applyLeaveAction->execute(Object(sfWebRequest))
+#10 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmExecutionFilter.php(36): sfExecutionFilter->executeAction(Object(applyLeaveAction))
+#11 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(947): orangehrmExecutionFilter->executeAction(Object(applyLeaveAction))
+#12 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(933): sfExecutionFilter->handleAction(Object(sfFilterChain), Object(applyLeaveAction))
+#13 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfExecutionFilter->execute(Object(sfFilterChain))
+#14 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfCommonFilter.class.php(29): sfFilterChain->execute()
+#15 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfCommonFilter->execute(Object(sfFilterChain))
+#16 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmPostExecutionFilter.php(22): sfFilterChain->execute()
+#17 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): orangehrmPostExecutionFilter->execute(Object(sfFilterChain))
+#18 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ModuleFilter.php(56): sfFilterChain->execute()
+#19 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ModuleFilter->execute(Object(sfFilterChain))
+#20 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/authorization/filter/ohrmAuthorizationFilter.php(97): sfFilterChain->execute()
+#21 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ohrmAuthorizationFilter->execute(Object(sfFilterChain))
+#22 /var/www/hrm/symfony/apps/orangehrm/lib/filter/SessionInfoFetcherFilter.php(67): sfFilterChain->execute()
+#23 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): SessionInfoFetcherFilter->execute(Object(sfFilterChain))
+#24 /var/www/hrm/symfony/apps/orangehrm/lib/filter/OrangeI18NFilter.php(58): sfFilterChain->execute()
+#25 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): OrangeI18NFilter->execute(Object(sfFilterChain))
+#26 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ExceptionCatcherFilter.php(26): sfFilterChain->execute()
+#27 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ExceptionCatcherFilter->execute(Object(sfFilterChain))
+#28 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfBasicSecurityFilter.class.php(72): sfFilterChain->execute()
+#29 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfBasicSecurityFilter->execute(Object(sfFilterChain))
+#30 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(995): sfFilterChain->execute()
+#31 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfRenderingFilter->execute(Object(sfFilterChain))
+#32 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(665): sfFilterChain->execute()
+#33 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(2352): sfController->forward('leave', 'applyLeave')
+#34 /var/www/hrm/symfony/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#35 /var/www/hrm/symfony/web/index.php(22): sfContext->dispatch()
+#36 {main}
+Wed 22 Feb 2017 04:29:15 AM IST,955 [1999] ERROR filter.ExceptionCatcherFilter - Uncaught Exception: exception 'Doctrine_Record_UnknownPropertyException' with message 'Unknown record property / related component "contact_no" on "LeaveRequest"' in /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record/Filter/Standard.php:44
+Stack trace:
+#0 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record.php(1504): Doctrine_Record_Filter_Standard->filterSet(Object(LeaveRequest), 'contact_no', 9730035236)
+#1 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record.php(1456): Doctrine_Record->_set('contact_no', 9730035236, true)
+#2 [internal function]: Doctrine_Record->set('contact_no', 9730035236)
+#3 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/record/sfDoctrineRecord.class.php(186): call_user_func_array(Array, Array)
+#4 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/AbstractLeaveAllocationService.php(458): sfDoctrineRecord->__call('setContactNo', Array)
+#5 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/AbstractLeaveAllocationService.php(458): LeaveRequest->setContactNo(9730035236)
+#6 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(87): AbstractLeaveAllocationService->generateLeaveRequest(Object(LeaveParameterObject))
+#7 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(74): LeaveApplicationService->saveLeaveRequest(Object(LeaveParameterObject))
+#8 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/applyLeaveAction.class.php(123): LeaveApplicationService->applyLeave(Object(LeaveParameterObject))
+#9 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(952): applyLeaveAction->execute(Object(sfWebRequest))
+#10 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmExecutionFilter.php(36): sfExecutionFilter->executeAction(Object(applyLeaveAction))
+#11 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(947): orangehrmExecutionFilter->executeAction(Object(applyLeaveAction))
+#12 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(933): sfExecutionFilter->handleAction(Object(sfFilterChain), Object(applyLeaveAction))
+#13 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfExecutionFilter->execute(Object(sfFilterChain))
+#14 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfCommonFilter.class.php(29): sfFilterChain->execute()
+#15 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfCommonFilter->execute(Object(sfFilterChain))
+#16 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmPostExecutionFilter.php(22): sfFilterChain->execute()
+#17 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): orangehrmPostExecutionFilter->execute(Object(sfFilterChain))
+#18 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ModuleFilter.php(56): sfFilterChain->execute()
+#19 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ModuleFilter->execute(Object(sfFilterChain))
+#20 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/authorization/filter/ohrmAuthorizationFilter.php(97): sfFilterChain->execute()
+#21 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ohrmAuthorizationFilter->execute(Object(sfFilterChain))
+#22 /var/www/hrm/symfony/apps/orangehrm/lib/filter/SessionInfoFetcherFilter.php(67): sfFilterChain->execute()
+#23 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): SessionInfoFetcherFilter->execute(Object(sfFilterChain))
+#24 /var/www/hrm/symfony/apps/orangehrm/lib/filter/OrangeI18NFilter.php(58): sfFilterChain->execute()
+#25 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): OrangeI18NFilter->execute(Object(sfFilterChain))
+#26 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ExceptionCatcherFilter.php(26): sfFilterChain->execute()
+#27 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ExceptionCatcherFilter->execute(Object(sfFilterChain))
+#28 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfBasicSecurityFilter.class.php(72): sfFilterChain->execute()
+#29 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfBasicSecurityFilter->execute(Object(sfFilterChain))
+#30 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(995): sfFilterChain->execute()
+#31 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfRenderingFilter->execute(Object(sfFilterChain))
+#32 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(665): sfFilterChain->execute()
+#33 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(2352): sfController->forward('leave', 'applyLeave')
+#34 /var/www/hrm/symfony/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#35 /var/www/hrm/symfony/web/index.php(22): sfContext->dispatch()
+#36 {main}
+Wed 22 Feb 2017 04:29:57 AM IST,069 [6756] ERROR filter.ExceptionCatcherFilter - Uncaught Exception: exception 'Doctrine_Record_UnknownPropertyException' with message 'Unknown record property / related component "contact_no" on "LeaveRequest"' in /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record/Filter/Standard.php:44
+Stack trace:
+#0 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record.php(1504): Doctrine_Record_Filter_Standard->filterSet(Object(LeaveRequest), 'contact_no', 7507322195)
+#1 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record.php(1456): Doctrine_Record->_set('contact_no', 7507322195, true)
+#2 [internal function]: Doctrine_Record->set('contact_no', 7507322195)
+#3 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/record/sfDoctrineRecord.class.php(186): call_user_func_array(Array, Array)
+#4 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/AbstractLeaveAllocationService.php(458): sfDoctrineRecord->__call('setContactNo', Array)
+#5 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/AbstractLeaveAllocationService.php(458): LeaveRequest->setContactNo(7507322195)
+#6 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(87): AbstractLeaveAllocationService->generateLeaveRequest(Object(LeaveParameterObject))
+#7 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(74): LeaveApplicationService->saveLeaveRequest(Object(LeaveParameterObject))
+#8 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/applyLeaveAction.class.php(123): LeaveApplicationService->applyLeave(Object(LeaveParameterObject))
+#9 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(952): applyLeaveAction->execute(Object(sfWebRequest))
+#10 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmExecutionFilter.php(36): sfExecutionFilter->executeAction(Object(applyLeaveAction))
+#11 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(947): orangehrmExecutionFilter->executeAction(Object(applyLeaveAction))
+#12 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(933): sfExecutionFilter->handleAction(Object(sfFilterChain), Object(applyLeaveAction))
+#13 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfExecutionFilter->execute(Object(sfFilterChain))
+#14 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfCommonFilter.class.php(29): sfFilterChain->execute()
+#15 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfCommonFilter->execute(Object(sfFilterChain))
+#16 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmPostExecutionFilter.php(22): sfFilterChain->execute()
+#17 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): orangehrmPostExecutionFilter->execute(Object(sfFilterChain))
+#18 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ModuleFilter.php(56): sfFilterChain->execute()
+#19 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ModuleFilter->execute(Object(sfFilterChain))
+#20 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/authorization/filter/ohrmAuthorizationFilter.php(97): sfFilterChain->execute()
+#21 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ohrmAuthorizationFilter->execute(Object(sfFilterChain))
+#22 /var/www/hrm/symfony/apps/orangehrm/lib/filter/SessionInfoFetcherFilter.php(67): sfFilterChain->execute()
+#23 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): SessionInfoFetcherFilter->execute(Object(sfFilterChain))
+#24 /var/www/hrm/symfony/apps/orangehrm/lib/filter/OrangeI18NFilter.php(58): sfFilterChain->execute()
+#25 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): OrangeI18NFilter->execute(Object(sfFilterChain))
+#26 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ExceptionCatcherFilter.php(26): sfFilterChain->execute()
+#27 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ExceptionCatcherFilter->execute(Object(sfFilterChain))
+#28 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfBasicSecurityFilter.class.php(72): sfFilterChain->execute()
+#29 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfBasicSecurityFilter->execute(Object(sfFilterChain))
+#30 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(995): sfFilterChain->execute()
+#31 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfRenderingFilter->execute(Object(sfFilterChain))
+#32 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(665): sfFilterChain->execute()
+#33 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(2352): sfController->forward('leave', 'applyLeave')
+#34 /var/www/hrm/symfony/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#35 /var/www/hrm/symfony/web/index.php(22): sfContext->dispatch()
+#36 {main}
+Wed 22 Feb 2017 04:35:06 AM IST,317 [2000] INFO core.email - ========== Message Begins ==========
+
+Time : February 22, 2017, 4:35 am
+Message Type : Success
+Message : Leave application email was sent to akanksha.sogani@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 22 Feb 2017 04:35:10 AM IST,316 [2000] INFO core.email - ========== Message Begins ==========
+
+Time : February 22, 2017, 4:35 am
+Message Type : Success
+Message : Leave application email was sent to nilesh@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:10:39 PM IST,425 [3868] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:10 pm
+Message Type : Success
+Message : Emails was sent to rahul.pacharne@perennialsys.com using smtp
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:16:43 PM IST,164 [3948] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:16 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:16:48 PM IST,220 [3948] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:16 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:16:50 PM IST,190 [3948] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:16 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:16:54 PM IST,622 [3948] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:16 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:20:16 PM IST,687 [2159] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:20 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:20:20 PM IST,342 [2159] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:20 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:20:22 PM IST,158 [2159] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:20 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:20:25 PM IST,624 [2159] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:20 pm
+Message Type : Success
+Message : Leave application email was sent to ashish.bhagwat@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:54:51 PM IST,790 [2155] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:54 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:54:56 PM IST,602 [2155] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:54 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:54:58 PM IST,899 [2155] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:54 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:55:04 PM IST,545 [2155] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:55 pm
+Message Type : Success
+Message : Leave application email was sent to ashish.bhagwat@perennialsys.com
+
+========== Message Ends ==========
+
+
+[28-Feb-2017 17:15:55 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/templates/applyLeaveSuccess.php on line 554
+[28-Feb-2017 17:16:20 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/templates/applyLeaveSuccess.php on line 554
+[28-Feb-2017 17:16:46 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/templates/applyLeaveSuccess.php on line 554
+Tue 28 Feb 2017 06:10:14 PM IST,588 [4423] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:10 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:10:18 PM IST,316 [4423] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:10 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:10:20 PM IST,019 [4423] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:10 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:10:23 PM IST,468 [4423] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:10 pm
+Message Type : Success
+Message : Leave application email was sent to ashish.bhagwat@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:10:59 PM IST,242 [5348] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:10 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:11:00 PM IST,895 [5348] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:11 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:11:05 PM IST,521 [5348] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:11 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:11:09 PM IST,336 [5348] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:11 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:11:10 PM IST,896 [5348] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:11 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:11:14 PM IST,541 [5348] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:11 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:11:19 PM IST,247 [5348] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:11 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:11:21 PM IST,023 [5348] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:11 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:11:25 PM IST,319 [5348] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:11 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:11:29 PM IST,369 [5348] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:11 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:11:31 PM IST,038 [5348] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:11 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:11:34 PM IST,568 [5348] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:11 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:21:59 PM IST,711 [8625] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:21 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:22:04 PM IST,170 [8625] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:22 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:22:06 PM IST,037 [8625] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:22 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 06:22:10 PM IST,718 [8625] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 6:22 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:32:34 PM IST,077 [8625] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:32 pm
+Message Type : Failure
+Message : Couldn't send leave application email to rahul.pacharne@perennialsys.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:32:54 PM IST,234 [8625] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:32 pm
+Message Type : Failure
+Message : Couldn't send leave application email to anuja.pendharka@perennialsys.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:33:07 PM IST,519 [8625] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:33 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:33:11 PM IST,652 [8625] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:33 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:35:21 PM IST,858 [7688] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:35 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:35:26 PM IST,073 [7688] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:35 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:35:27 PM IST,802 [7688] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:35 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:35:31 PM IST,937 [7688] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:35 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:48:06 PM IST,663 [10220] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:48 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:48:09 PM IST,866 [10220] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:48 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:48:11 PM IST,261 [10220] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:48 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:48:14 PM IST,594 [10220] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:48 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 04:29:56 PM IST,962 [11072] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 4:29 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 04:30:00 PM IST,281 [11072] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 4:30 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 04:30:01 PM IST,972 [11072] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 4:30 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 04:30:05 PM IST,819 [11072] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 4:30 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 04:31:15 PM IST,098 [8642] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 4:31 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 04:31:16 PM IST,578 [8642] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 4:31 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 04:31:31 PM IST,223 [8642] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 4:31 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 05:17:42 PM IST,292 [11583] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 5:17 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 05:17:45 PM IST,409 [11583] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 5:17 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 05:17:47 PM IST,039 [11583] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 5:17 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 05:17:50 PM IST,531 [11583] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 5:17 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+[01-Mar-2017 17:53:17 Asia/Calcutta] PHP Fatal error:  Undefined class constant 'IN_BETWEEN_DAY' in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/form/ApplyLeaveForm.php on line 581
+[01-Mar-2017 17:53:37 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'protected' (T_PROTECTED) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/form/ApplyLeaveForm.php on line 302
+[01-Mar-2017 17:53:50 Asia/Calcutta] PHP Fatal error:  Undefined class constant 'IN_BETWEEN_DAY' in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/form/ApplyLeaveForm.php on line 581
+[01-Mar-2017 17:54:47 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/form/ApplyLeaveForm.php on line 580
+[01-Mar-2017 17:54:51 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/form/ApplyLeaveForm.php on line 580
+Thu 02 Mar 2017 02:32:39 AM IST,799 [12019] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:32 am
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 02:32:42 AM IST,433 [12019] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:32 am
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 02:32:47 AM IST,041 [12019] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:32 am
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 02:33:04 AM IST,428 [12961] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:33 am
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 02:33:06 AM IST,499 [12961] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:33 am
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 02:33:10 AM IST,055 [12961] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:33 am
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 02:33:14 AM IST,176 [12961] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:33 am
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 02:33:16 AM IST,252 [12961] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:33 am
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 02:33:19 AM IST,580 [12961] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:33 am
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 02:34:03 AM IST,324 [11860] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:34 am
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 02:34:06 AM IST,672 [11860] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:34 am
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 02:34:08 AM IST,178 [11860] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:34 am
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 02:34:11 AM IST,482 [11860] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:34 am
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 02:37:15 AM IST,125 [13512] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:37 am
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 02:37:16 AM IST,697 [13512] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:37 am
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 02:37:19 AM IST,901 [13512] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 2:37 am
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+[02-Mar-2017 02:41:35 Asia/Calcutta] Action "leave/applyLeave_dev" does not exist.
+Thu 02 Mar 2017 01:49:27 PM IST,480 [2176] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:49 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 01:49:31 PM IST,640 [2176] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:49 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 01:49:33 PM IST,541 [2176] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:49 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 01:49:37 PM IST,489 [2176] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:49 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 01:51:14 PM IST,342 [2176] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:51 pm
+Message Type : Success
+Message : Emails was sent to anuja.pendharka@perennialsys.com using smtp
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 01:51:22 PM IST,518 [2176] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:51 pm
+Message Type : Success
+Message : Emails was sent to pacharne.rahul92@gmail.com using smtp
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 01:51:29 PM IST,953 [2176] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:51 pm
+Message Type : Success
+Message : Emails was sent to rahul.pacharne@perennialsys.com using smtp
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 01:53:37 PM IST,079 [3976] ERROR filter.ExceptionCatcherFilter - Uncaught Exception: exception 'DaoException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '207' for key 'leave_id'' in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/dao/LeaveRequestDao.php:1154
+Stack trace:
+#0 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveRequestService.php(230): LeaveRequestDao->saveLeaveCondition(Object(LeaveConditions))
+#1 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/saveConditionsAction.class.php(121): LeaveRequestService->saveLeaveCondition(Object(Leave), '207', 'Only if you com...', '2017-03-02')
+#2 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(952): saveConditionsAction->execute(Object(sfWebRequest))
+#3 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmExecutionFilter.php(36): sfExecutionFilter->executeAction(Object(saveConditionsAction))
+#4 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(947): orangehrmExecutionFilter->executeAction(Object(saveConditionsAction))
+#5 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(933): sfExecutionFilter->handleAction(Object(sfFilterChain), Object(saveConditionsAction))
+#6 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfExecutionFilter->execute(Object(sfFilterChain))
+#7 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfCommonFilter.class.php(29): sfFilterChain->execute()
+#8 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfCommonFilter->execute(Object(sfFilterChain))
+#9 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmPostExecutionFilter.php(22): sfFilterChain->execute()
+#10 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): orangehrmPostExecutionFilter->execute(Object(sfFilterChain))
+#11 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ModuleFilter.php(56): sfFilterChain->execute()
+#12 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ModuleFilter->execute(Object(sfFilterChain))
+#13 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/authorization/filter/ohrmAuthorizationFilter.php(97): sfFilterChain->execute()
+#14 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ohrmAuthorizationFilter->execute(Object(sfFilterChain))
+#15 /var/www/hrm/symfony/apps/orangehrm/lib/filter/SessionInfoFetcherFilter.php(67): sfFilterChain->execute()
+#16 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): SessionInfoFetcherFilter->execute(Object(sfFilterChain))
+#17 /var/www/hrm/symfony/apps/orangehrm/lib/filter/OrangeI18NFilter.php(58): sfFilterChain->execute()
+#18 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): OrangeI18NFilter->execute(Object(sfFilterChain))
+#19 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ExceptionCatcherFilter.php(26): sfFilterChain->execute()
+#20 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ExceptionCatcherFilter->execute(Object(sfFilterChain))
+#21 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfBasicSecurityFilter.class.php(72): sfFilterChain->execute()
+#22 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfBasicSecurityFilter->execute(Object(sfFilterChain))
+#23 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(995): sfFilterChain->execute()
+#24 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfRenderingFilter->execute(Object(sfFilterChain))
+#25 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(665): sfFilterChain->execute()
+#26 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(2352): sfController->forward('leave', 'saveConditions')
+#27 /var/www/hrm/symfony/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#28 /var/www/hrm/symfony/web/index.php(22): sfContext->dispatch()
+#29 {main}
+Thu 02 Mar 2017 01:53:45 PM IST,738 [3976] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:53 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 01:53:50 PM IST,015 [3976] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:53 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 01:53:51 PM IST,764 [3976] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:53 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+[02-Mar-2017 15:47:50 Asia/Calcutta] Empty module and/or action after parsing the URL "/admin/" (/).
+Thu 02 Mar 2017 03:50:22 PM IST,279 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 3:50 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 03:50:27 PM IST,059 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 3:50 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 03:50:29 PM IST,327 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 3:50 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 03:50:34 PM IST,574 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 3:50 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+[02-Mar-2017 16:18:50 Asia/Calcutta] PHP Fatal error:  Call to a member function getEmpNumber() on a non-object in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/updateCommentAction.class.php on line 112
+Thu 02 Mar 2017 04:19:10 PM IST,371 [2179] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 4:19 pm
+Message Type : Success
+Message : Emails was sent to anuja.pendharka@perennialsys.com using smtp
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 04:19:16 PM IST,552 [2179] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 4:19 pm
+Message Type : Success
+Message : Emails was sent to pacharne.rahul92@gmail.com using smtp
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 04:19:22 PM IST,671 [2179] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 4:19 pm
+Message Type : Success
+Message : Emails was sent to rahul.pacharne@perennialsys.com using smtp
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 04:22:16 PM IST,006 [5532] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 4:22 pm
+Message Type : Success
+Message : Emails was sent to anuja.pendharka@perennialsys.com using smtp
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 04:22:22 PM IST,203 [5532] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 4:22 pm
+Message Type : Success
+Message : Emails was sent to pacharne.rahul92@gmail.com using smtp
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 04:22:28 PM IST,779 [5532] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 4:22 pm
+Message Type : Success
+Message : Emails was sent to rahul.pacharne@perennialsys.com using smtp
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 04:24:58 PM IST,817 [5532] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 4:24 pm
+Message Type : Success
+Message : Emails was sent to anuja.pendharka@perennialsys.com using smtp
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 04:25:04 PM IST,476 [5532] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 4:25 pm
+Message Type : Success
+Message : Emails was sent to pacharne.rahul92@gmail.com using smtp
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 04:25:57 PM IST,717 [2176] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 4:25 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 04:26:03 PM IST,704 [2176] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 4:26 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 04:26:10 PM IST,820 [2176] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 4:26 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 04:26:13 PM IST,263 [2176] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 4:26 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 05:44:02 PM IST,323 [3976] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 5:44 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 05:44:05 PM IST,552 [3976] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 5:44 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 05:44:13 PM IST,487 [3976] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 5:44 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 05:44:21 PM IST,615 [3976] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 5:44 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 05:44:29 PM IST,301 [3976] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 5:44 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 05:44:37 PM IST,385 [3976] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 5:44 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 05:44:44 PM IST,525 [3976] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 5:44 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 05:44:52 PM IST,745 [3976] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 5:44 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 05:44:55 PM IST,880 [3976] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 5:44 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:09:13 PM IST,756 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:09 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:09:18 PM IST,866 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:09 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:09:21 PM IST,849 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:09 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:09:28 PM IST,738 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:09 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:26:17 PM IST,392 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:26 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:26:20 PM IST,590 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:26 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:26:22 PM IST,415 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:26 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:26:25 PM IST,749 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:26 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:42:06 PM IST,801 [5532] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:42 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:42:09 PM IST,893 [5532] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:42 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:42:11 PM IST,392 [5532] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:42 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:42:14 PM IST,729 [5532] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:42 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:43:36 PM IST,395 [6201] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:43 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:43:37 PM IST,988 [6201] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:43 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:43:41 PM IST,099 [6201] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:43 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:43:44 PM IST,350 [6201] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:43 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:43:45 PM IST,838 [6201] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:43 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:43:49 PM IST,014 [6201] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:43 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:43:52 PM IST,578 [6201] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:43 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:43:54 PM IST,142 [6201] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:43 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:43:57 PM IST,501 [6201] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:43 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:44:40 PM IST,828 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:44 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:44:44 PM IST,064 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:44 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:44:45 PM IST,667 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:44 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:44:48 PM IST,923 [3974] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:44 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:45:33 PM IST,273 [5532] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:45 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:45:34 PM IST,710 [5532] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:45 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:45:37 PM IST,933 [5532] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:45 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:46:55 PM IST,766 [8371] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:46 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:46:58 PM IST,829 [8371] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:46 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:47:00 PM IST,299 [8371] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:47 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 03:47:03 PM IST,818 [8371] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 3:47 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+[03-Mar-2017 16:24:03 Asia/Calcutta] PHP Fatal error:  Call to undefined function isempty() in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 90
+[03-Mar-2017 16:25:15 Asia/Calcutta] PHP Fatal error:  Call to undefined function isempty() in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 90
+[03-Mar-2017 16:28:48 Asia/Calcutta] PHP Fatal error:  Call to undefined function isempty() in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 174
+[03-Mar-2017 16:29:21 Asia/Calcutta] PHP Fatal error:  Call to undefined function isempty() in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 174
+Fri 03 Mar 2017 04:30:00 PM IST,727 [2173] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 4:30 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 04:30:03 PM IST,032 [2173] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 4:30 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 04:30:08 PM IST,951 [2173] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 4:30 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+[03-Mar-2017 16:31:49 Asia/Calcutta] PHP Fatal error:  Call to undefined function isempty() in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 174
+[03-Mar-2017 16:33:37 Asia/Calcutta] PHP Fatal error:  Call to undefined function isempty() in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 176
+[03-Mar-2017 16:34:16 Asia/Calcutta] PHP Fatal error:  Class 'DataTime' not found in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 177
+[03-Mar-2017 16:37:38 Asia/Calcutta] PHP Fatal error:  Class 'DataTime' not found in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 175
+[03-Mar-2017 16:40:00 Asia/Calcutta] PHP Fatal error:  Class 'DataTime' not found in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 188
+[03-Mar-2017 16:40:37 Asia/Calcutta] PHP Fatal error:  Class 'DataTime' not found in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 224
+[03-Mar-2017 16:49:48 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$current_date' (T_VARIABLE) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 225
+[03-Mar-2017 16:50:03 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$current_date' (T_VARIABLE) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 225
+[03-Mar-2017 16:50:06 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$current_date' (T_VARIABLE) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 225
+[03-Mar-2017 16:53:44 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$current_date' (T_VARIABLE) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 225
+[03-Mar-2017 16:54:54 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$current_date' (T_VARIABLE) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 225
+[03-Mar-2017 16:55:42 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$current_date' (T_VARIABLE) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 225
+[03-Mar-2017 16:59:50 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$current_date' (T_VARIABLE) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 225
+[03-Mar-2017 17:01:32 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$current_date' (T_VARIABLE) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 225
+[03-Mar-2017 17:01:40 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$current_date' (T_VARIABLE) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 225
+[03-Mar-2017 17:01:42 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '$current_date' (T_VARIABLE) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 225
+Sat 04 Mar 2017 05:58:35 PM IST,778 [12871] INFO core.email - ========== Message Begins ==========
+
+Time : March 4, 2017, 5:58 pm
+Message Type : Failure
+Message : Couldn't send leave application email to rahul.pacharne@perennialsys.com. Reason: Expected response code 250 but got code "530", with message "530-5.5.1 Authentication Required. Learn more at
+530 5.5.1  https://support.google.com/mail/?p=WantAuthError c11sm29156277pfe.68 - gsmtp
+"
+
+========== Message Ends ==========
+
+
+Sat 04 Mar 2017 05:58:39 PM IST,492 [12871] INFO core.email - ========== Message Begins ==========
+
+Time : March 4, 2017, 5:58 pm
+Message Type : Failure
+Message : Couldn't send leave application email to anuja.pendharka@perennialsys.com. Reason: Expected response code 250 but got code "530", with message "530-5.5.1 Authentication Required. Learn more at
+530 5.5.1  https://support.google.com/mail/?p=WantAuthError e129sm29135049pfe.8 - gsmtp
+"
+
+========== Message Ends ==========
+
+
+Sat 04 Mar 2017 05:58:39 PM IST,741 [12871] INFO core.email - ========== Message Begins ==========
+
+Time : March 4, 2017, 5:58 pm
+Message Type : Failure
+Message : Couldn't send leave application email to pacharne.rahul92@gmail.com. Reason: Expected response code 250 but got code "530", with message "530-5.5.1 Authentication Required. Learn more at
+530 5.5.1  https://support.google.com/mail/?p=WantAuthError e129sm29135049pfe.8 - gsmtp
+"
+
+========== Message Ends ==========
+
+
+Sat 04 Mar 2017 05:58:44 PM IST,744 [12871] INFO core.email - ========== Message Begins ==========
+
+Time : March 4, 2017, 5:58 pm
+Message Type : Failure
+Message : Couldn't send leave application email to vivek.swansi@perennialsys.com. Reason: Expected response code 250 but got code "530", with message "530-5.5.1 Authentication Required. Learn more at
+530 5.5.1  https://support.google.com/mail/?p=WantAuthError m20sm29269053pgd.67 - gsmtp
+"
+
+========== Message Ends ==========
+
+

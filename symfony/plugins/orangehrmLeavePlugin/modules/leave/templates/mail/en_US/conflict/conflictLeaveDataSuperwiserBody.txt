@@ -1,0 +1,14 @@
+Hi %recipientFirstName%,
+<br /><br />
+%performerFullName% has applied for leave. The leave is conflict with his Subordinate:
+<br />
+    
+%conflictLeaveData%
+<br />
+You were sent this mail, as you are a supervisor assigned for %performerFirstName%.
+<br />
+<br />
+
+Thank you.
+<br /><br />
+This is an automated notification.
