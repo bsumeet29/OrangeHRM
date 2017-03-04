@@ -1,0 +1,794 @@
+Wed 22 Feb 2017 04:16:41 AM IST,652 [2000] ERROR leave.LeaveApplicationService - Exception while saving leave:exception 'DaoException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'contact_no' in 'field list'' in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/dao/LeaveRequestDao.php:104
+Stack trace:
+#0 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveRequestService.php(208): LeaveRequestDao->saveLeaveRequest(Object(LeaveRequest), Array, false)
+#1 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(131): LeaveRequestService->saveLeaveRequest(Object(LeaveRequest), Array, false)
+#2 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(74): LeaveApplicationService->saveLeaveRequest(Object(LeaveParameterObject))
+#3 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/applyLeaveAction.class.php(123): LeaveApplicationService->applyLeave(Object(LeaveParameterObject))
+#4 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(952): applyLeaveAction->execute(Object(sfWebRequest))
+#5 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmExecutionFilter.php(36): sfExecutionFilter->executeAction(Object(applyLeaveAction))
+#6 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(947): orangehrmExecutionFilter->executeAction(Object(applyLeaveAction))
+#7 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(933): sfExecutionFilter->handleAction(Object(sfFilterChain), Object(applyLeaveAction))
+#8 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfExecutionFilter->execute(Object(sfFilterChain))
+#9 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfCommonFilter.class.php(29): sfFilterChain->execute()
+#10 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfCommonFilter->execute(Object(sfFilterChain))
+#11 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmPostExecutionFilter.php(22): sfFilterChain->execute()
+#12 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): orangehrmPostExecutionFilter->execute(Object(sfFilterChain))
+#13 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ModuleFilter.php(56): sfFilterChain->execute()
+#14 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ModuleFilter->execute(Object(sfFilterChain))
+#15 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/authorization/filter/ohrmAuthorizationFilter.php(97): sfFilterChain->execute()
+#16 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ohrmAuthorizationFilter->execute(Object(sfFilterChain))
+#17 /var/www/hrm/symfony/apps/orangehrm/lib/filter/SessionInfoFetcherFilter.php(67): sfFilterChain->execute()
+#18 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): SessionInfoFetcherFilter->execute(Object(sfFilterChain))
+#19 /var/www/hrm/symfony/apps/orangehrm/lib/filter/OrangeI18NFilter.php(58): sfFilterChain->execute()
+#20 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): OrangeI18NFilter->execute(Object(sfFilterChain))
+#21 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ExceptionCatcherFilter.php(26): sfFilterChain->execute()
+#22 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ExceptionCatcherFilter->execute(Object(sfFilterChain))
+#23 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfBasicSecurityFilter.class.php(72): sfFilterChain->execute()
+#24 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfBasicSecurityFilter->execute(Object(sfFilterChain))
+#25 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(995): sfFilterChain->execute()
+#26 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfRenderingFilter->execute(Object(sfFilterChain))
+#27 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(665): sfFilterChain->execute()
+#28 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(2352): sfController->forward('leave', 'applyLeave')
+#29 /var/www/hrm/symfony/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#30 /var/www/hrm/symfony/web/index.php(22): sfContext->dispatch()
+#31 {main}
+Wed 22 Feb 2017 04:17:33 AM IST,054 [5840] ERROR leave.LeaveApplicationService - Exception while saving leave:exception 'DaoException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'contact_no' in 'field list'' in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/dao/LeaveRequestDao.php:106
+Stack trace:
+#0 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveRequestService.php(208): LeaveRequestDao->saveLeaveRequest(Object(LeaveRequest), Array, false)
+#1 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(131): LeaveRequestService->saveLeaveRequest(Object(LeaveRequest), Array, false)
+#2 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(74): LeaveApplicationService->saveLeaveRequest(Object(LeaveParameterObject))
+#3 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/applyLeaveAction.class.php(123): LeaveApplicationService->applyLeave(Object(LeaveParameterObject))
+#4 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(952): applyLeaveAction->execute(Object(sfWebRequest))
+#5 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmExecutionFilter.php(36): sfExecutionFilter->executeAction(Object(applyLeaveAction))
+#6 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(947): orangehrmExecutionFilter->executeAction(Object(applyLeaveAction))
+#7 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(933): sfExecutionFilter->handleAction(Object(sfFilterChain), Object(applyLeaveAction))
+#8 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfExecutionFilter->execute(Object(sfFilterChain))
+#9 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfCommonFilter.class.php(29): sfFilterChain->execute()
+#10 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfCommonFilter->execute(Object(sfFilterChain))
+#11 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmPostExecutionFilter.php(22): sfFilterChain->execute()
+#12 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): orangehrmPostExecutionFilter->execute(Object(sfFilterChain))
+#13 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ModuleFilter.php(56): sfFilterChain->execute()
+#14 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ModuleFilter->execute(Object(sfFilterChain))
+#15 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/authorization/filter/ohrmAuthorizationFilter.php(97): sfFilterChain->execute()
+#16 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ohrmAuthorizationFilter->execute(Object(sfFilterChain))
+#17 /var/www/hrm/symfony/apps/orangehrm/lib/filter/SessionInfoFetcherFilter.php(67): sfFilterChain->execute()
+#18 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): SessionInfoFetcherFilter->execute(Object(sfFilterChain))
+#19 /var/www/hrm/symfony/apps/orangehrm/lib/filter/OrangeI18NFilter.php(58): sfFilterChain->execute()
+#20 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): OrangeI18NFilter->execute(Object(sfFilterChain))
+#21 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ExceptionCatcherFilter.php(26): sfFilterChain->execute()
+#22 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ExceptionCatcherFilter->execute(Object(sfFilterChain))
+#23 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfBasicSecurityFilter.class.php(72): sfFilterChain->execute()
+#24 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfBasicSecurityFilter->execute(Object(sfFilterChain))
+#25 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(995): sfFilterChain->execute()
+#26 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfRenderingFilter->execute(Object(sfFilterChain))
+#27 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(665): sfFilterChain->execute()
+#28 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(2352): sfController->forward('leave', 'applyLeave')
+#29 /var/www/hrm/symfony/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#30 /var/www/hrm/symfony/web/index.php(22): sfContext->dispatch()
+#31 {main}
+Wed 22 Feb 2017 04:23:54 AM IST,933 [5831] ERROR filter.ExceptionCatcherFilter - Uncaught Exception: exception 'Doctrine_Record_UnknownPropertyException' with message 'Unknown record property / related component "contact_no" on "LeaveRequest"' in /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record/Filter/Standard.php:44
+Stack trace:
+#0 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record.php(1504): Doctrine_Record_Filter_Standard->filterSet(Object(LeaveRequest), 'contact_no', 9730035236)
+#1 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record.php(1456): Doctrine_Record->_set('contact_no', 9730035236, true)
+#2 [internal function]: Doctrine_Record->set('contact_no', 9730035236)
+#3 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/record/sfDoctrineRecord.class.php(186): call_user_func_array(Array, Array)
+#4 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/AbstractLeaveAllocationService.php(458): sfDoctrineRecord->__call('setContactNo', Array)
+#5 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/AbstractLeaveAllocationService.php(458): LeaveRequest->setContactNo(9730035236)
+#6 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(87): AbstractLeaveAllocationService->generateLeaveRequest(Object(LeaveParameterObject))
+#7 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(74): LeaveApplicationService->saveLeaveRequest(Object(LeaveParameterObject))
+#8 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/applyLeaveAction.class.php(123): LeaveApplicationService->applyLeave(Object(LeaveParameterObject))
+#9 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(952): applyLeaveAction->execute(Object(sfWebRequest))
+#10 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmExecutionFilter.php(36): sfExecutionFilter->executeAction(Object(applyLeaveAction))
+#11 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(947): orangehrmExecutionFilter->executeAction(Object(applyLeaveAction))
+#12 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(933): sfExecutionFilter->handleAction(Object(sfFilterChain), Object(applyLeaveAction))
+#13 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfExecutionFilter->execute(Object(sfFilterChain))
+#14 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfCommonFilter.class.php(29): sfFilterChain->execute()
+#15 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfCommonFilter->execute(Object(sfFilterChain))
+#16 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmPostExecutionFilter.php(22): sfFilterChain->execute()
+#17 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): orangehrmPostExecutionFilter->execute(Object(sfFilterChain))
+#18 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ModuleFilter.php(56): sfFilterChain->execute()
+#19 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ModuleFilter->execute(Object(sfFilterChain))
+#20 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/authorization/filter/ohrmAuthorizationFilter.php(97): sfFilterChain->execute()
+#21 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ohrmAuthorizationFilter->execute(Object(sfFilterChain))
+#22 /var/www/hrm/symfony/apps/orangehrm/lib/filter/SessionInfoFetcherFilter.php(67): sfFilterChain->execute()
+#23 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): SessionInfoFetcherFilter->execute(Object(sfFilterChain))
+#24 /var/www/hrm/symfony/apps/orangehrm/lib/filter/OrangeI18NFilter.php(58): sfFilterChain->execute()
+#25 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): OrangeI18NFilter->execute(Object(sfFilterChain))
+#26 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ExceptionCatcherFilter.php(26): sfFilterChain->execute()
+#27 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ExceptionCatcherFilter->execute(Object(sfFilterChain))
+#28 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfBasicSecurityFilter.class.php(72): sfFilterChain->execute()
+#29 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfBasicSecurityFilter->execute(Object(sfFilterChain))
+#30 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(995): sfFilterChain->execute()
+#31 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfRenderingFilter->execute(Object(sfFilterChain))
+#32 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(665): sfFilterChain->execute()
+#33 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(2352): sfController->forward('leave', 'applyLeave')
+#34 /var/www/hrm/symfony/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#35 /var/www/hrm/symfony/web/index.php(22): sfContext->dispatch()
+#36 {main}
+Wed 22 Feb 2017 04:29:15 AM IST,955 [1999] ERROR filter.ExceptionCatcherFilter - Uncaught Exception: exception 'Doctrine_Record_UnknownPropertyException' with message 'Unknown record property / related component "contact_no" on "LeaveRequest"' in /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record/Filter/Standard.php:44
+Stack trace:
+#0 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record.php(1504): Doctrine_Record_Filter_Standard->filterSet(Object(LeaveRequest), 'contact_no', 9730035236)
+#1 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record.php(1456): Doctrine_Record->_set('contact_no', 9730035236, true)
+#2 [internal function]: Doctrine_Record->set('contact_no', 9730035236)
+#3 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/record/sfDoctrineRecord.class.php(186): call_user_func_array(Array, Array)
+#4 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/AbstractLeaveAllocationService.php(458): sfDoctrineRecord->__call('setContactNo', Array)
+#5 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/AbstractLeaveAllocationService.php(458): LeaveRequest->setContactNo(9730035236)
+#6 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(87): AbstractLeaveAllocationService->generateLeaveRequest(Object(LeaveParameterObject))
+#7 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(74): LeaveApplicationService->saveLeaveRequest(Object(LeaveParameterObject))
+#8 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/applyLeaveAction.class.php(123): LeaveApplicationService->applyLeave(Object(LeaveParameterObject))
+#9 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(952): applyLeaveAction->execute(Object(sfWebRequest))
+#10 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmExecutionFilter.php(36): sfExecutionFilter->executeAction(Object(applyLeaveAction))
+#11 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(947): orangehrmExecutionFilter->executeAction(Object(applyLeaveAction))
+#12 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(933): sfExecutionFilter->handleAction(Object(sfFilterChain), Object(applyLeaveAction))
+#13 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfExecutionFilter->execute(Object(sfFilterChain))
+#14 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfCommonFilter.class.php(29): sfFilterChain->execute()
+#15 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfCommonFilter->execute(Object(sfFilterChain))
+#16 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmPostExecutionFilter.php(22): sfFilterChain->execute()
+#17 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): orangehrmPostExecutionFilter->execute(Object(sfFilterChain))
+#18 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ModuleFilter.php(56): sfFilterChain->execute()
+#19 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ModuleFilter->execute(Object(sfFilterChain))
+#20 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/authorization/filter/ohrmAuthorizationFilter.php(97): sfFilterChain->execute()
+#21 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ohrmAuthorizationFilter->execute(Object(sfFilterChain))
+#22 /var/www/hrm/symfony/apps/orangehrm/lib/filter/SessionInfoFetcherFilter.php(67): sfFilterChain->execute()
+#23 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): SessionInfoFetcherFilter->execute(Object(sfFilterChain))
+#24 /var/www/hrm/symfony/apps/orangehrm/lib/filter/OrangeI18NFilter.php(58): sfFilterChain->execute()
+#25 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): OrangeI18NFilter->execute(Object(sfFilterChain))
+#26 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ExceptionCatcherFilter.php(26): sfFilterChain->execute()
+#27 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ExceptionCatcherFilter->execute(Object(sfFilterChain))
+#28 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfBasicSecurityFilter.class.php(72): sfFilterChain->execute()
+#29 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfBasicSecurityFilter->execute(Object(sfFilterChain))
+#30 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(995): sfFilterChain->execute()
+#31 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfRenderingFilter->execute(Object(sfFilterChain))
+#32 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(665): sfFilterChain->execute()
+#33 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(2352): sfController->forward('leave', 'applyLeave')
+#34 /var/www/hrm/symfony/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#35 /var/www/hrm/symfony/web/index.php(22): sfContext->dispatch()
+#36 {main}
+Wed 22 Feb 2017 04:29:57 AM IST,069 [6756] ERROR filter.ExceptionCatcherFilter - Uncaught Exception: exception 'Doctrine_Record_UnknownPropertyException' with message 'Unknown record property / related component "contact_no" on "LeaveRequest"' in /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record/Filter/Standard.php:44
+Stack trace:
+#0 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record.php(1504): Doctrine_Record_Filter_Standard->filterSet(Object(LeaveRequest), 'contact_no', 7507322195)
+#1 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Record.php(1456): Doctrine_Record->_set('contact_no', 7507322195, true)
+#2 [internal function]: Doctrine_Record->set('contact_no', 7507322195)
+#3 /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/record/sfDoctrineRecord.class.php(186): call_user_func_array(Array, Array)
+#4 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/AbstractLeaveAllocationService.php(458): sfDoctrineRecord->__call('setContactNo', Array)
+#5 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/AbstractLeaveAllocationService.php(458): LeaveRequest->setContactNo(7507322195)
+#6 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(87): AbstractLeaveAllocationService->generateLeaveRequest(Object(LeaveParameterObject))
+#7 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/service/LeaveApplicationService.php(74): LeaveApplicationService->saveLeaveRequest(Object(LeaveParameterObject))
+#8 /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/applyLeaveAction.class.php(123): LeaveApplicationService->applyLeave(Object(LeaveParameterObject))
+#9 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(952): applyLeaveAction->execute(Object(sfWebRequest))
+#10 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmExecutionFilter.php(36): sfExecutionFilter->executeAction(Object(applyLeaveAction))
+#11 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(947): orangehrmExecutionFilter->executeAction(Object(applyLeaveAction))
+#12 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(933): sfExecutionFilter->handleAction(Object(sfFilterChain), Object(applyLeaveAction))
+#13 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfExecutionFilter->execute(Object(sfFilterChain))
+#14 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfCommonFilter.class.php(29): sfFilterChain->execute()
+#15 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfCommonFilter->execute(Object(sfFilterChain))
+#16 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmPostExecutionFilter.php(22): sfFilterChain->execute()
+#17 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): orangehrmPostExecutionFilter->execute(Object(sfFilterChain))
+#18 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ModuleFilter.php(56): sfFilterChain->execute()
+#19 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ModuleFilter->execute(Object(sfFilterChain))
+#20 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/authorization/filter/ohrmAuthorizationFilter.php(97): sfFilterChain->execute()
+#21 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ohrmAuthorizationFilter->execute(Object(sfFilterChain))
+#22 /var/www/hrm/symfony/apps/orangehrm/lib/filter/SessionInfoFetcherFilter.php(67): sfFilterChain->execute()
+#23 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): SessionInfoFetcherFilter->execute(Object(sfFilterChain))
+#24 /var/www/hrm/symfony/apps/orangehrm/lib/filter/OrangeI18NFilter.php(58): sfFilterChain->execute()
+#25 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): OrangeI18NFilter->execute(Object(sfFilterChain))
+#26 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ExceptionCatcherFilter.php(26): sfFilterChain->execute()
+#27 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ExceptionCatcherFilter->execute(Object(sfFilterChain))
+#28 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfBasicSecurityFilter.class.php(72): sfFilterChain->execute()
+#29 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfBasicSecurityFilter->execute(Object(sfFilterChain))
+#30 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(995): sfFilterChain->execute()
+#31 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfRenderingFilter->execute(Object(sfFilterChain))
+#32 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(665): sfFilterChain->execute()
+#33 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(2352): sfController->forward('leave', 'applyLeave')
+#34 /var/www/hrm/symfony/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#35 /var/www/hrm/symfony/web/index.php(22): sfContext->dispatch()
+#36 {main}
+Wed 22 Feb 2017 04:35:06 AM IST,317 [2000] INFO core.email - ========== Message Begins ==========
+
+Time : February 22, 2017, 4:35 am
+Message Type : Success
+Message : Leave application email was sent to akanksha.sogani@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 22 Feb 2017 04:35:10 AM IST,316 [2000] INFO core.email - ========== Message Begins ==========
+
+Time : February 22, 2017, 4:35 am
+Message Type : Success
+Message : Leave application email was sent to nilesh@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 01:50:21 PM IST,364 [7637] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 1:50 pm
+Message Type : Success
+Message : Emails was sent to rahul.pacharne@perennialsys.com using smtp
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:01:54 PM IST,467 [27413] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:01 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:01:57 PM IST,587 [27413] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:01 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:01:59 PM IST,027 [27413] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:01 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:02:02 PM IST,431 [27413] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:02 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:57:53 PM IST,526 [1979] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:57 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:57:57 PM IST,583 [1979] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:57 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:57:59 PM IST,750 [1979] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:57 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 02:58:03 PM IST,713 [1979] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:58 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 03:45:48 PM IST,486 [32194] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 3:45 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 03:45:51 PM IST,877 [32194] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 3:45 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 03:45:53 PM IST,442 [32194] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 3:45 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 03:45:56 PM IST,959 [32194] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 3:45 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+[28-Feb-2017 16:01:35 Asia/Calcutta] PHP Fatal error:  Call to a member function render() on a non-object in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/templates/applyLeaveSuccess.php on line 36
+[28-Feb-2017 16:01:45 Asia/Calcutta] PHP Fatal error:  Call to a member function render() on a non-object in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/templates/applyLeaveSuccess.php on line 36
+[28-Feb-2017 16:04:22 Asia/Calcutta] PHP Fatal error:  Call to undefined function render() in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/templates/applyLeaveSuccess.php on line 36
+[28-Feb-2017 16:05:08 Asia/Calcutta] PHP Fatal error:  Call to undefined function render() in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/templates/applyLeaveSuccess.php on line 36
+[28-Feb-2017 16:08:51 Asia/Calcutta] PHP Fatal error:  Call to undefined function render() in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/templates/applyLeaveSuccess.php on line 42
+[28-Feb-2017 16:08:56 Asia/Calcutta] PHP Fatal error:  Call to undefined function render() in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/templates/applyLeaveSuccess.php on line 42
+[28-Feb-2017 16:28:33 Asia/Calcutta] PHP Fatal error:  Call to undefined function render() in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/templates/applyLeaveSuccess.php on line 42
+[28-Feb-2017 16:28:52 Asia/Calcutta] PHP Fatal error:  Call to undefined function render() in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/templates/applyLeaveSuccess.php on line 42
+Tue 28 Feb 2017 04:40:59 PM IST,991 [33235] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 4:40 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 04:41:03 PM IST,353 [33235] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 4:41 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 04:41:04 PM IST,862 [33235] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 4:41 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Tue 28 Feb 2017 04:41:08 PM IST,097 [33235] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 4:41 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:49:19 AM IST,742 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:49 am
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:49:24 AM IST,429 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:49 am
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:49:26 AM IST,434 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:49 am
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:49:30 AM IST,790 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:49 am
+Message Type : Success
+Message : Leave application email was sent to ashish.bhagwat@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:53:05 AM IST,033 [36424] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:53:09 AM IST,810 [36424] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+Message Type : Success
+Message : Leave application email was sent to ashish.bhagwat@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:53:13 AM IST,478 [36424] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:53:15 AM IST,372 [36424] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:53:44 AM IST,817 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:53:49 AM IST,512 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:53:53 AM IST,863 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:53:55 AM IST,637 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:54:32 AM IST,778 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:54 am
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:54:36 AM IST,217 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:54 am
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:54:39 AM IST,885 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:54 am
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:54:43 AM IST,591 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:54 am
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:54:47 AM IST,968 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:54 am
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 11:54:51 AM IST,705 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:54 am
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:00:54 PM IST,918 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:00 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:00:59 PM IST,851 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:00 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:01:01 PM IST,987 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:01 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:01:05 PM IST,820 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:01 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:05:42 PM IST,433 [36424] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:05 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Wed 01 Mar 2017 12:05:45 PM IST,853 [36424] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:05 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+[01-Mar-2017 12:47:57 Asia/Calcutta] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/model/doctrine/PluginLeaveEntitlement.class.php on line 14
+[01-Mar-2017 12:47:57 Asia/Calcutta] PHP Fatal error:  Call to a member function evictAll() on a non-object in /var/www/hrm/symfony/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Connection.php on line 1239
+[02-Mar-2017 02:59:55 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'self' (T_STRING), expecting ')' in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/form/ApplyLeaveForm.php on line 575
+[02-Mar-2017 03:00:06 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'self' (T_STRING), expecting ')' in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/lib/form/ApplyLeaveForm.php on line 575
+Thu 02 Mar 2017 01:39:19 PM IST,818 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:39 pm
+Message Type : Failure
+Message : Couldn't send leave application email to rahul.pacharne@perennialsys.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 01:39:40 PM IST,027 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:39 pm
+Message Type : Failure
+Message : Couldn't send leave application email to anuja.pendharka@perennialsys.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 01:40:00 PM IST,066 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:40 pm
+Message Type : Failure
+Message : Couldn't send leave application email to pacharne.rahul92@gmail.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 01:40:20 PM IST,399 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:40 pm
+Message Type : Failure
+Message : Couldn't send leave application email to vivek.swansi@perennialsys.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 01:47:11 PM IST,697 [41391] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:47 pm
+Message Type : Failure
+Message : Couldn't send leave application email to anuja.pendharka@perennialsys.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 01:47:31 PM IST,773 [41391] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:47 pm
+Message Type : Failure
+Message : Couldn't send leave application email to pacharne.rahul92@gmail.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 01:47:52 PM IST,083 [41391] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:47 pm
+Message Type : Failure
+Message : Couldn't send leave application email to rahul.pacharne@perennialsys.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 03:41:02 PM IST,078 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 3:41 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 03:41:08 PM IST,136 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 3:41 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 03:41:10 PM IST,264 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 3:41 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Thu 02 Mar 2017 03:41:15 PM IST,513 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 3:41 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+[02-Mar-2017 17:29:54 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 222
+[02-Mar-2017 17:32:25 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 222
+[02-Mar-2017 17:42:02 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 222
+[02-Mar-2017 17:42:28 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 222
+[02-Mar-2017 17:44:45 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 222
+[02-Mar-2017 17:44:58 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 222
+[03-Mar-2017 11:49:12 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 222
+[03-Mar-2017 11:59:39 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/getLeaveBalanceAjaxAction.class.php on line 222
+Fri 03 Mar 2017 12:15:28 PM IST,818 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 12:15 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 12:15:36 PM IST,108 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 12:15 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 12:15:39 PM IST,301 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 12:15 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 12:15:46 PM IST,154 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 12:15 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 01:05:39 PM IST,098 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 1:05 pm
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 01:05:44 PM IST,964 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 1:05 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 01:05:50 PM IST,937 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 1:05 pm
+Message Type : Success
+Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+
+========== Message Ends ==========
+
+
+Fri 03 Mar 2017 01:05:53 PM IST,271 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 1:05 pm
+Message Type : Success
+Message : Leave application email was sent to pacharne.rahul92@gmail.com
+
+========== Message Ends ==========
+
+
+Sat 04 Mar 2017 06:56:42 PM IST,723 [48358] ERROR filter.ExceptionCatcherFilter - Uncaught Exception: exception 'LeaveAllocationServiceException' with message 'In between ata nahi select karacha rao' in /var/www/hrm/symfony/plugins/orangehrmLeavePlugin/modules/leave/templates/applyLeaveSuccess.php:777
+Stack trace:
+#0 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(3851): require()
+#1 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(3910): sfPHPView->renderFile('/var/www/hrm/sy...')
+#2 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(979): sfPHPView->render()
+#3 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(966): sfExecutionFilter->executeView('leave', 'applyLeave', 'Success', Array)
+#4 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(934): sfExecutionFilter->handleView(Object(sfFilterChain), Object(applyLeaveAction), 'Success')
+#5 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfExecutionFilter->execute(Object(sfFilterChain))
+#6 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfCommonFilter.class.php(29): sfFilterChain->execute()
+#7 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfCommonFilter->execute(Object(sfFilterChain))
+#8 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmPostExecutionFilter.php(22): sfFilterChain->execute()
+#9 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): orangehrmPostExecutionFilter->execute(Object(sfFilterChain))
+#10 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ModuleFilter.php(56): sfFilterChain->execute()
+#11 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ModuleFilter->execute(Object(sfFilterChain))
+#12 /var/www/hrm/symfony/plugins/orangehrmCorePlugin/lib/authorization/filter/ohrmAuthorizationFilter.php(97): sfFilterChain->execute()
+#13 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ohrmAuthorizationFilter->execute(Object(sfFilterChain))
+#14 /var/www/hrm/symfony/apps/orangehrm/lib/filter/SessionInfoFetcherFilter.php(67): sfFilterChain->execute()
+#15 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): SessionInfoFetcherFilter->execute(Object(sfFilterChain))
+#16 /var/www/hrm/symfony/apps/orangehrm/lib/filter/OrangeI18NFilter.php(58): sfFilterChain->execute()
+#17 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): OrangeI18NFilter->execute(Object(sfFilterChain))
+#18 /var/www/hrm/symfony/apps/orangehrm/lib/filter/ExceptionCatcherFilter.php(26): sfFilterChain->execute()
+#19 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ExceptionCatcherFilter->execute(Object(sfFilterChain))
+#20 /var/www/hrm/symfony/lib/vendor/symfony/lib/filter/sfBasicSecurityFilter.class.php(72): sfFilterChain->execute()
+#21 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfBasicSecurityFilter->execute(Object(sfFilterChain))
+#22 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(995): sfFilterChain->execute()
+#23 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfRenderingFilter->execute(Object(sfFilterChain))
+#24 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(665): sfFilterChain->execute()
+#25 /var/www/hrm/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(2352): sfController->forward('leave', 'applyLeave')
+#26 /var/www/hrm/symfony/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#27 /var/www/hrm/symfony/web/index.php(22): sfContext->dispatch()
+#28 {main}

@@ -1,0 +1,12 @@
+Hi %recipientFirstName%,
+<br /><br />
+%performerFullName% has cancelled leave. The leave details:
+<br />
+%leaveDetails%
+<br />
+
+You were sent this mail, as you are a supervisor assigned for %performerFirstName%.
+<br /><br />
+Thank you.
+<br /><br />
+This is an automated notification.

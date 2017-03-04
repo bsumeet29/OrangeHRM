@@ -1,0 +1,17 @@
+Hi %recipientFirstName%,
+<br /><br />
+%performerFullName% has applied for leave(s). PSB the leave summary:
+
+<br />
+%leaveDetails%      
+
+<br />
+This is an auto-generated email shared with you, since you are marked as a supervisor for this candidate. ​Hence, we would request you to kindly approve/disapprove based on the work status by logging in to below mentioned link to Perennial HRM.
+<br /><br />
+%link%
+<br />
+Looking forward for your co-operation.
+<br /><br />
+--<br />
+Thanks<br />
+Team-Perennial 

@@ -1,0 +1,48 @@
+Client Info
+
+User Agent : Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36
+Remote Address : 127.0.0.1
+
+Server Info
+
+Host : localhost
+PHP Version : 5.5.9
+Server : Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9
+Admin : webmaster@localhost.com
+
+Document Root : C:/xampp/htdocs
+ROOT_PATH : C:\xampp\htdocs\PerennialHRM
+
+OrangeHRM Installation Log
+
+Wed, 26 Nov 2014 08:33:15 +0100 DB Creation - Starting
+Wed, 26 Nov 2014 08:33:15 +0100 DB Creation - Done
+Wed, 26 Nov 2014 08:33:15 +0100 DB Creation - No Errors
+Wed, 26 Nov 2014 08:33:17 +0100 Fill Data Phase 1 - Starting
+Wed, 26 Nov 2014 08:33:17 +0100 Fill Data Phase 1 - Connected to the DB Server
+Wed, 26 Nov 2014 08:33:17 +0100 Fill Data Phase 1 - Selected the DB
+Wed, 26 Nov 2014 08:33:17 +0100 Fill Data Phase 1 - Reading DB Script
+Wed, 26 Nov 2014 08:33:17 +0100 Fill Data Phase 1 - Opened DB Script
+Wed, 26 Nov 2014 08:33:17 +0100 Fill Data Phase 1 - Read DB script
+Wed, 26 Nov 2014 08:33:17 +0100 Fill Data Phase 1 - There are 272 Statements in the DB script
+Wed, 26 Nov 2014 08:37:08 +0100 Fill Data Phase 1 - Done
+Wed, 26 Nov 2014 08:37:08 +0100 Fill Data Phase 1 - No Errors
+Wed, 26 Nov 2014 08:37:11 +0100 Fill Data Phase 2 - Starting
+Wed, 26 Nov 2014 08:37:11 +0100 Fill Data Phase 2 - Connected to the DB Server
+Wed, 26 Nov 2014 08:37:11 +0100 Fill Data Phase 2 - Selected the DB
+Wed, 26 Nov 2014 08:37:11 +0100 Fill Data Phase 2 - Reading DB Script
+Wed, 26 Nov 2014 08:37:11 +0100 Fill Data Phase 2 - Opened DB Script
+Wed, 26 Nov 2014 08:37:11 +0100 Fill Data Phase 2 - Read DB script
+Wed, 26 Nov 2014 08:37:11 +0100 Fill Data Phase 2 - There are 111 Statements in the DB script
+Wed, 26 Nov 2014 08:37:28 +0100 Fill Data Phase 1 - Connected to the DB Server
+Wed, 26 Nov 2014 08:37:29 +0100 Fill Data Phase 2 - Done
+Wed, 26 Nov 2014 08:37:29 +0100 Fill Data Phase 2 - No Errors
+Wed, 26 Nov 2014 08:37:31 +0100 Create DB user - Starting
+Wed, 26 Nov 2014 08:37:31 +0100 Create DB user - Done
+Wed, 26 Nov 2014 08:37:31 +0100 Create DB user - No Errors
+Wed, 26 Nov 2014 08:37:33 +0100 Create OrangeHRM user - Starting
+Wed, 26 Nov 2014 08:37:34 +0100 Create OrangeHRM user - Done
+Wed, 26 Nov 2014 08:37:34 +0100 Create OrangeHRM user - No Errors
+Wed, 26 Nov 2014 08:37:37 +0100 Write Conf - Starting
+Wed, 26 Nov 2014 08:37:37 +0100 Write Conf - Done
+Wed, 26 Nov 2014 08:37:37 +0100 Write Conf - No Errors

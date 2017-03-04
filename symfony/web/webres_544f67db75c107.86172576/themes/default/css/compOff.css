@@ -1,0 +1,15 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 Apr, 2016, 3:04:38 PM
+    Author     : rahul
+*/
+
+#applyCompoff form ol li label {
+	
+	min-width:150px !important;
+	
+}

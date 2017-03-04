@@ -1,0 +1,2 @@
+Leave Conflict Notification - %performerFullName% Applied for  Leave
+ is conflict leave with your leave

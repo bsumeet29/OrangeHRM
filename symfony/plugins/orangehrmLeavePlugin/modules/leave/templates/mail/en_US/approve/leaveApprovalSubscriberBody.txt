@@ -1,0 +1,13 @@
+Hi %recipientFirstName%,
+<br /><br />
+%performerFullName% has approved leave request of %applicantFullName%. The leave details:
+<br />
+%leaveDetails%
+
+<br />
+
+You were sent this mail, as you have subscribed to OrangeHRM leave approvals.
+<br /><br />
+Thank you.
+<br /><br />
+This is an automated notification.
