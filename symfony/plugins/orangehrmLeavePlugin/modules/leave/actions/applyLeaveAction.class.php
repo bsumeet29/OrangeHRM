@@ -93,7 +93,11 @@ class applyLeaveAction extends baseLeaveAction {
     }
     
     public function execute($request) {
+<<<<<<< HEAD
        print_r("Insie exec");
+=======
+       #print_r("Insie exec");
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
         $this->getLeaveRequestService()->markApprovedLeaveAsTaken();
         $this->getCompoffRequestService()->markExpiredCompoff();
         $this->leaveTypes = $this->getElegibleLeaveTypes();
@@ -102,13 +106,19 @@ class applyLeaveAction extends baseLeaveAction {
             $this->getUser()->setFlash('warning.nofade', __('No Leave Types with Leave Balance'));
         }
 
+<<<<<<< HEAD
 	    $this->applyLeaveForm = $this->getApplyLeaveForm($this->leaveTypes,$this->previousTasks);
+=======
+	#print_r("pahila error nahi ala");
+        $this->applyLeaveForm = $this->getApplyLeaveForm($this->leaveTypes,$this->previousTasks);
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
         $this->overlapLeaves = 0;
         $this->workshiftLengthExceeded = true;
 
         //this section is to save leave request
       //  echo"<pre>";print_r($request);exit;
         if ($request->isMethod('post')) {
+<<<<<<< HEAD
 	                                
 		$this->applyLeaveForm->bind($request->getParameter($this->applyLeaveForm->getName()));
             if ($this->applyLeaveForm->isValid()) {
@@ -118,6 +128,21 @@ class applyLeaveAction extends baseLeaveAction {
                   
 		$success = $this->getLeaveApplicationService()->applyLeave($leaveParameters);
 	                if ($success) {
+=======
+		#print_r("Dusra error nahi ala");
+                                    
+		$this->applyLeaveForm->bind($request->getParameter($this->applyLeaveForm->getName()));
+            if ($this->applyLeaveForm->isValid()) {
+			#print_r("thisra error nahi ala<br>");
+                        
+                try {
+                    $leaveParameters = $this->getLeaveParameterObject($this->applyLeaveForm->getValues());
+                    print_r("4 error nahi ala<br>");
+                        print_r("<br>  LEavceparamter Value " + $leaveParameters);
+		$success = $this->getLeaveApplicationService()->applyLeave($leaveParameters);
+			print_r($success + " Success v alues");
+                    if ($success) {
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                         $this->getUser()->setFlash('success', __('Successfully Submitted'));
                 //                            $this->redirect('leave/viewMyLeaveList/reset/1');
                         header("Location:viewMyLeaveList/reset/1");

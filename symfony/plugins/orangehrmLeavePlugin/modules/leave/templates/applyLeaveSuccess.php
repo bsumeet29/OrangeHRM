@@ -32,7 +32,18 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
 
                         <li>
                             <label for="txtFromDate"><?php echo __('From Date') . $requiredMarker; ?></label>
+<<<<<<< HEAD
                             <?php echo $applyLeaveForm['txtFromDate']->render(); ?>
+=======
+                            <?php  
+                                   #echo $d;
+                                   #$ed=strtotime("txtFromDate");
+                                   #$diff=$ed-$d;
+                                   #echo floor($diff / (60 * 60 * 24));
+                                echo $applyLeaveForm['txtFromDate']->render();
+                                #$d=date();
+                                #echo render($d); ?>
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                         </li>
                         <li>
                             <label for="txtToDate"><?php echo __('To Date') . $requiredMarker; ?></label>
@@ -268,7 +279,11 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
     var lang_StartDay = "<?php echo __('Start Day'); ?>";
     var lang_EndDay = "<?php echo __('End Day'); ?>";
     var leaveTaskUrl = '<?php echo url_for('leave/getPreviousTaskAjax'); ?>';
+<<<<<<< HEAD
     var employeeListUrl = '<?php echo url_for('leave/employeeListAjax'); ?>';
+=======
+    var employeeListUrl = '<?php echo url_for('leave/employeeListAjax'); ?>';535
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
     var employeeList;
     $(document).ready(function () {
         for (j = 1; j <= 5; j++) {
@@ -330,10 +345,16 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
         $('#applyleave_partialDays').change(function () {
             handlePartialDayChange(true);
         });
+<<<<<<< HEAD
 //shubham was here
         if (trim($("#applyleave_txtFromDate").val()) == displayDateFormat || trim($("#applyleave_txtToDate").val()) == displayDateFormat
                 || trim($("#applyleave_txtFromDate").val()) == '' || trim($("#applyleave_txtToDate").val()) == '') {
 
+=======
+
+        if (trim($("#applyleave_txtFromDate").val()) == displayDateFormat || trim($("#applyleave_txtToDate").val()) == displayDateFormat
+                || trim($("#applyleave_txtFromDate").val()) == '' || trim($("#applyleave_txtToDate").val()) == '') {
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
             showTimeControls(false, false);
         } else if (trim($("#applyleave_txtFromDate").val()) == trim($("#applyleave_txtToDate").val())) {
             showTimeControls(true, false);
@@ -357,6 +378,7 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
             var endDate = $('#applyleave_txtToDate').val();
             $('#applyleave_leaveBalance').text('--');
             $('#leaveBalance_details_link').remove();
+<<<<<<< HEAD
 //shubham->edit for not allowing same day wfh.
             var d = new Date();
             var month = d.getMonth()+1;
@@ -370,6 +392,12 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
                     window.alert("Intimation of WFH must be made to the supervisor & the admin one working day prior.");
                     window.location.reload();   
                 }
+=======
+
+            if (leaveType == "") {
+                //$('#applyleave_leaveBalance').text('--');
+            } else {
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                 $('#applyleave_leaveBalance').text('').addClass('loading_message');
                 $.ajax({
                     type: 'GET',
@@ -381,10 +409,15 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
 
                             var leavePeriods = data.data;
                             var leavePeriodCount = leavePeriods.length;
+<<<<<<< HEAD
 //shubham was here  -> this code was here -> data.negative ? lang_BalanceNotSufficient :
                             //var linkTxt = data.negative ? lang_BalanceNotSufficient :lang_details;
                             var linkTxt = lang_details;
 
+=======
+
+                            var linkTxt = data.negative ? lang_BalanceNotSufficient : lang_details;
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                             var balanceTxt = leavePeriodCount == 1 ? leavePeriods[0].balance.balance.toFixed(2) : '';
                             var linkCss = data.negative ? ' class="error" ' : "";
 
@@ -393,6 +426,10 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
                                             linkTxt + '</a>');
 
                             var html = '';
+<<<<<<< HEAD
+=======
+
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                             var rows = 0;
                             for (var i = 0; i < leavePeriodCount; i++) {
                                 var leavePeriod = leavePeriods[i];
@@ -422,8 +459,14 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
                                                 '</td><td>' + leaveDate + '</td><td class="right">' + balanceValue + '</td></tr>';
                                     }
                                 }
+<<<<<<< HEAD
                                 }
                                 $('div#multiperiod_balance table.table tbody').html('').append(html);
+=======
+
+                                $('div#multiperiod_balance table.table tbody').html('').append(html);
+                            }
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
                         } else {
                             var balance = data.balance;
@@ -480,6 +523,14 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
                     
 
                 },
+<<<<<<< HEAD
+=======
+                /*'applyleave[txtLeaveType]': {
+                    required: true
+                    validnpl:true
+
+                },*/
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                 'applyleave[txtFromDate]': {
                     required: true,
                     valid_date: function () {
@@ -487,8 +538,12 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
                             required: true,
                             format: datepickerDateFormat,
                             displayFormat: displayDateFormat,
+<<<<<<< HEAD
                             validateLeaveType: true,
                                                              
+=======
+                            validateLeaveType: true
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                         }
                     }
                 },
@@ -547,12 +602,25 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
                 'applyleave[txtLeaveType]': {
                     required: "<?php echo __(ValidationMessages::REQUIRED); ?>",
                     validateLeaveType: "<?php echo __('This type of leaves should be applied 7 days prior to the leave date.'); ?>"
+<<<<<<< HEAD
                 },
                 'applyleave[txtFromDate]': {
                     required: lang_invalidDate,
                     valid_date: lang_invalidDate
                     
 
+=======
+                    
+                }/*,
+                'applyleave[txtLeaveType]': {
+                    required: "<?php //echo __(ValidationMessages::REQUIRED); ?>",
+                    validnpl: "<?php //echo __('This type of leaves can be applied for max 7 days'); ?>"
+                  }*/,
+                'applyleave[txtFromDate]': {
+                    required: lang_invalidDate,
+                    valid_date: lang_invalidDate,
+                    validateLeaveType: "<?php echo __('This type of leaves should be applied 7 days prior to the leave date.'); ?>"
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                 },
                 'applyleave[txtToDate]': {
                     required: lang_invalidDate,
@@ -667,6 +735,7 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
             var valid = true;
             var today = new Date();
             var dd = today.getDate() + 7;
+<<<<<<< HEAD
             var t = today.getDate() + 0;
             var months = new Array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12');
             var month = months[today.getMonth()];
@@ -678,11 +747,21 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
             }
             var nextWeek = dd + '-' + month + '-' + today.getFullYear();
             var todayy = t + '-' + month + '-' + today.getFullYear();
+=======
+            var months = new Array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12');
+            var month = months[today.getMonth()];
+
+            if (dd < 10) {
+                dd = '0' + dd;
+            }
+            var nextWeek = dd + '-' + month + '-' + today.getFullYear();
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
             if (today.getDate() < 10) {
                 var todaysDate = today.getFullYear() + '-' + month + '-0' + today.getDate();
             } else {
                 var todaysDate = today.getFullYear() + '-' + month + '-' + today.getDate();
             }
+<<<<<<< HEAD
             
             if ($('#applyleave_txtFromDate').val()) {
                 var v = $('#applyleave_leaveBalance').text();
@@ -704,6 +783,33 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
             return valid;
         });
 
+=======
+
+            if ($('#applyleave_txtFromDate').val()) {
+                var v = $('#applyleave_leaveBalance').text();
+                v = v.substr(0, v.indexOf("."));
+                var str1 = $('#applyleave_txtFromDate').val();
+                var leaveDate = reverse(str1);
+                var nextWeekDate = reverse(nextWeek);
+                if (leaveDate > nextWeekDate) {
+                    return true;
+                } else if (leaveDate < nextWeekDate && ($('#applyleave_txtLeaveType').val() === '2' || $('#applyleave_txtLeaveType').val() === '4')) {
+                    return false;
+                }
+            }
+            
+        });
+        /*sum
+         $.validator.addMethod ("validnpl", function (value, element) {
+            if((strtotime($('#applyleave_txtToDate').val())-strtotime($('#applyleave_txtFromDate').val()))>7 && $('#applyleave_txtLeaveType').val()==='3')
+                    return true;
+            else
+                    return false;                
+            
+            
+        });
+        */        
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
         //Click Submit button
         $('#applyBtn').click(function () {
             //   alert(JSON.stringify($('#applyleave_txtContactPerson').val(), null, 4));return false;
@@ -720,6 +826,10 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
     function showTimeControls(showOneDay, showMultiDay) {
 
         var oneDayControlIds = ['applyleave_duration_duration'];
+<<<<<<< HEAD
+=======
+
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
         $.each(oneDayControlIds, function (index, value) {
 
             if (showOneDay) {
@@ -749,6 +859,10 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
         var partialDay = $('#applyleave_partialDays').val();
         var startLabel = false;
         var endLabel = false;
+<<<<<<< HEAD
+=======
+
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
         if (!showMultiDay || partialDay === '') {
             $('#applyleave_firstDuration_duration').parent('li').hide();
             $('#applyleave_secondDuration_duration').parent('li').hide();
@@ -765,7 +879,15 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
             $('#applyleave_secondDuration_duration').parent('li').show();
             startLabel = lang_StartDay;
             endLabel = lang_EndDay;
+<<<<<<< HEAD
         }
+=======
+        } else if (partialDay === 'in_between') {
+            window.alert("Error: Cannot select partial for any other day except start or end day. Separately apply for the same");
+            window.location.reload();
+        }
+
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
         if (startLabel) {
             $('#applyleave_firstDuration_duration').parent('li').children('label:first-child').text(startLabel);
         }

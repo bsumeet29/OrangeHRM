@@ -15,7 +15,11 @@ test:
   .settings:
     error_reporting:        <?php echo ((E_ALL | E_STRICT) ^ (E_NOTICE | E_DEPRECATED))."\n" ?>
     cache:                  false
+<<<<<<< HEAD
     web_debug:              true
+=======
+    web_debug:              false
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
     no_script_name:         false
     etag:                   false
 

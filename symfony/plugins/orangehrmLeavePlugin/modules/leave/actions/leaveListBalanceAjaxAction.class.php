@@ -98,6 +98,10 @@ class leaveListBalanceAjaxAction extends sfAction {
             }
         }
         
+<<<<<<< HEAD
+=======
+        
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
         return $data;
     }
 }

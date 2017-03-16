@@ -11844,150 +11844,251 @@ Message : Leave application email was sent to nilesh@perennialsys.com
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 02:10:39 PM IST,425 [3868] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 2:10 pm
+=======
+Tue 28 Feb 2017 01:50:21 PM IST,364 [7637] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 1:50 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Emails was sent to rahul.pacharne@perennialsys.com using smtp
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 02:16:43 PM IST,164 [3948] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 2:16 pm
+=======
+Tue 28 Feb 2017 02:01:54 PM IST,467 [27413] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:01 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 02:16:48 PM IST,220 [3948] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 2:16 pm
+=======
+Tue 28 Feb 2017 02:01:57 PM IST,587 [27413] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:01 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to anuja.pendharka@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 02:16:50 PM IST,190 [3948] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 2:16 pm
+=======
+Tue 28 Feb 2017 02:01:59 PM IST,027 [27413] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:01 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 02:16:54 PM IST,622 [3948] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 2:16 pm
+=======
+Tue 28 Feb 2017 02:02:02 PM IST,431 [27413] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:02 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to vivek.swansi@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 02:20:16 PM IST,687 [2159] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 2:20 pm
+=======
+Tue 28 Feb 2017 02:57:53 PM IST,526 [1979] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:57 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 02:20:20 PM IST,342 [2159] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 2:20 pm
+=======
+Tue 28 Feb 2017 02:57:57 PM IST,583 [1979] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:57 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to anuja.pendharka@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 02:20:22 PM IST,158 [2159] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 2:20 pm
+=======
+Tue 28 Feb 2017 02:57:59 PM IST,750 [1979] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:57 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 02:20:25 PM IST,624 [2159] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 2:20 pm
 Message Type : Success
 Message : Leave application email was sent to ashish.bhagwat@perennialsys.com
+=======
+Tue 28 Feb 2017 02:58:03 PM IST,713 [1979] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 2:58 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 02:54:51 PM IST,790 [2155] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 2:54 pm
+=======
+Tue 28 Feb 2017 03:45:48 PM IST,486 [32194] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 3:45 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 02:54:56 PM IST,602 [2155] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 2:54 pm
+=======
+Tue 28 Feb 2017 03:45:51 PM IST,877 [32194] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 3:45 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to anuja.pendharka@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 02:54:58 PM IST,899 [2155] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 2:54 pm
+=======
+Tue 28 Feb 2017 03:45:53 PM IST,442 [32194] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 3:45 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 02:55:04 PM IST,545 [2155] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 2:55 pm
 Message Type : Success
 Message : Leave application email was sent to ashish.bhagwat@perennialsys.com
+=======
+Tue 28 Feb 2017 03:45:56 PM IST,959 [32194] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 3:45 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:10:14 PM IST,588 [4423] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:10 pm
+=======
+Tue 28 Feb 2017 04:40:59 PM IST,991 [33235] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 4:40 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:10:18 PM IST,316 [4423] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:10 pm
+=======
+Tue 28 Feb 2017 04:41:03 PM IST,353 [33235] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 4:41 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to anuja.pendharka@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:10:20 PM IST,019 [4423] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:10 pm
+=======
+Tue 28 Feb 2017 04:41:04 PM IST,862 [33235] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 4:41 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:10:23 PM IST,468 [4423] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:10 pm
@@ -12011,37 +12112,63 @@ Tue 28 Feb 2017 06:11:00 PM IST,895 [5348] INFO core.email - ========== Message 
 Time : February 28, 2017, 6:11 pm
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
+=======
+Tue 28 Feb 2017 04:41:08 PM IST,097 [33235] INFO core.email - ========== Message Begins ==========
+
+Time : February 28, 2017, 4:41 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:11:05 PM IST,521 [5348] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:11 pm
+=======
+Wed 01 Mar 2017 11:49:19 AM IST,742 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:49 am
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:11:09 PM IST,336 [5348] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:11 pm
+=======
+Wed 01 Mar 2017 11:49:24 AM IST,429 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:49 am
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to anuja.pendharka@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:11:10 PM IST,896 [5348] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:11 pm
+=======
+Wed 01 Mar 2017 11:49:26 AM IST,434 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:49 am
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:11:14 PM IST,541 [5348] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:11 pm
@@ -12056,82 +12183,144 @@ Tue 28 Feb 2017 06:11:19 PM IST,247 [5348] INFO core.email - ========== Message 
 Time : February 28, 2017, 6:11 pm
 Message Type : Success
 Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+=======
+Wed 01 Mar 2017 11:49:30 AM IST,790 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:49 am
+Message Type : Success
+Message : Leave application email was sent to ashish.bhagwat@perennialsys.com
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:11:21 PM IST,023 [5348] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:11 pm
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
+=======
+Wed 01 Mar 2017 11:53:05 AM IST,033 [36424] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:11:25 PM IST,319 [5348] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:11 pm
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+=======
+Wed 01 Mar 2017 11:53:09 AM IST,810 [36424] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+Message Type : Success
+Message : Leave application email was sent to ashish.bhagwat@perennialsys.com
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:11:29 PM IST,369 [5348] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:11 pm
+=======
+Wed 01 Mar 2017 11:53:13 AM IST,478 [36424] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to anuja.pendharka@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:11:31 PM IST,038 [5348] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:11 pm
+=======
+Wed 01 Mar 2017 11:53:15 AM IST,372 [36424] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:11:34 PM IST,568 [5348] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:11 pm
+=======
+Wed 01 Mar 2017 11:53:44 AM IST,817 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:21:59 PM IST,711 [8625] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:21 pm
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+=======
+Wed 01 Mar 2017 11:53:49 AM IST,512 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:22:04 PM IST,170 [8625] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:22 pm
+=======
+Wed 01 Mar 2017 11:53:53 AM IST,863 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to anuja.pendharka@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:22:06 PM IST,037 [8625] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:22 pm
+=======
+Wed 01 Mar 2017 11:53:55 AM IST,637 [36940] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:53 am
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Tue 28 Feb 2017 06:22:10 PM IST,718 [8625] INFO core.email - ========== Message Begins ==========
 
 Time : February 28, 2017, 6:22 pm
@@ -12164,28 +12353,48 @@ Wed 01 Mar 2017 12:33:07 PM IST,519 [8625] INFO core.email - ========== Message 
 Time : March 1, 2017, 12:33 pm
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
+=======
+Wed 01 Mar 2017 11:54:32 AM IST,778 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:54 am
+Message Type : Success
+Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Wed 01 Mar 2017 12:33:11 PM IST,652 [8625] INFO core.email - ========== Message Begins ==========
 
 Time : March 1, 2017, 12:33 pm
+=======
+Wed 01 Mar 2017 11:54:36 AM IST,217 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:54 am
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to vivek.swansi@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Wed 01 Mar 2017 12:35:21 PM IST,858 [7688] INFO core.email - ========== Message Begins ==========
 
 Time : March 1, 2017, 12:35 pm
+=======
+Wed 01 Mar 2017 11:54:39 AM IST,885 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:54 am
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Wed 01 Mar 2017 12:35:26 PM IST,073 [7688] INFO core.email - ========== Message Begins ==========
 
 Time : March 1, 2017, 12:35 pm
@@ -12207,21 +12416,33 @@ Message : Leave application email was sent to pacharne.rahul92@gmail.com
 Wed 01 Mar 2017 12:35:31 PM IST,937 [7688] INFO core.email - ========== Message Begins ==========
 
 Time : March 1, 2017, 12:35 pm
+=======
+Wed 01 Mar 2017 11:54:43 AM IST,591 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:54 am
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to vivek.swansi@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Wed 01 Mar 2017 12:48:06 PM IST,663 [10220] INFO core.email - ========== Message Begins ==========
 
 Time : March 1, 2017, 12:48 pm
+=======
+Wed 01 Mar 2017 11:54:47 AM IST,968 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:54 am
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Wed 01 Mar 2017 12:48:09 PM IST,866 [10220] INFO core.email - ========== Message Begins ==========
 
 Time : March 1, 2017, 12:48 pm
@@ -12243,48 +12464,78 @@ Message : Leave application email was sent to pacharne.rahul92@gmail.com
 Wed 01 Mar 2017 12:48:14 PM IST,594 [10220] INFO core.email - ========== Message Begins ==========
 
 Time : March 1, 2017, 12:48 pm
+=======
+Wed 01 Mar 2017 11:54:51 AM IST,705 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 11:54 am
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to vivek.swansi@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Wed 01 Mar 2017 04:29:56 PM IST,962 [11072] INFO core.email - ========== Message Begins ==========
 
 Time : March 1, 2017, 4:29 pm
+=======
+Wed 01 Mar 2017 12:00:54 PM IST,918 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:00 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Wed 01 Mar 2017 04:30:00 PM IST,281 [11072] INFO core.email - ========== Message Begins ==========
 
 Time : March 1, 2017, 4:30 pm
+=======
+Wed 01 Mar 2017 12:00:59 PM IST,851 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:00 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to anuja.pendharka@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Wed 01 Mar 2017 04:30:01 PM IST,972 [11072] INFO core.email - ========== Message Begins ==========
 
 Time : March 1, 2017, 4:30 pm
+=======
+Wed 01 Mar 2017 12:01:01 PM IST,987 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:01 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Wed 01 Mar 2017 04:30:05 PM IST,819 [11072] INFO core.email - ========== Message Begins ==========
 
 Time : March 1, 2017, 4:30 pm
+=======
+Wed 01 Mar 2017 12:01:05 PM IST,820 [36939] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:01 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to vivek.swansi@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Wed 01 Mar 2017 04:31:15 PM IST,098 [8642] INFO core.email - ========== Message Begins ==========
 
 Time : March 1, 2017, 4:31 pm
@@ -12315,12 +12566,18 @@ Message : Leave application email was sent to rahul.pacharne@perennialsys.com
 Wed 01 Mar 2017 05:17:42 PM IST,292 [11583] INFO core.email - ========== Message Begins ==========
 
 Time : March 1, 2017, 5:17 pm
+=======
+Wed 01 Mar 2017 12:05:42 PM IST,433 [36424] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:05 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Wed 01 Mar 2017 05:17:45 PM IST,409 [11583] INFO core.email - ========== Message Begins ==========
 
 Time : March 1, 2017, 5:17 pm
@@ -12342,12 +12599,18 @@ Message : Leave application email was sent to pacharne.rahul92@gmail.com
 Wed 01 Mar 2017 05:17:50 PM IST,531 [11583] INFO core.email - ========== Message Begins ==========
 
 Time : March 1, 2017, 5:17 pm
+=======
+Wed 01 Mar 2017 12:05:45 PM IST,853 [36424] INFO core.email - ========== Message Begins ==========
+
+Time : March 1, 2017, 12:05 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to vivek.swansi@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 02:32:39 AM IST,799 [12019] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 2:32 am
@@ -12371,100 +12634,180 @@ Thu 02 Mar 2017 02:32:47 AM IST,041 [12019] INFO core.email - ========== Message
 Time : March 2, 2017, 2:32 am
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+=======
+Thu 02 Mar 2017 01:39:19 PM IST,818 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:39 pm
+Message Type : Failure
+Message : Couldn't send leave application email to rahul.pacharne@perennialsys.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 02:33:04 AM IST,428 [12961] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 2:33 am
 Message Type : Success
 Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+=======
+Thu 02 Mar 2017 01:39:40 PM IST,027 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:39 pm
+Message Type : Failure
+Message : Couldn't send leave application email to anuja.pendharka@perennialsys.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 02:33:06 AM IST,499 [12961] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 2:33 am
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
+=======
+Thu 02 Mar 2017 01:40:00 PM IST,066 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:40 pm
+Message Type : Failure
+Message : Couldn't send leave application email to pacharne.rahul92@gmail.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 02:33:10 AM IST,055 [12961] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 2:33 am
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+=======
+Thu 02 Mar 2017 01:40:20 PM IST,399 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:40 pm
+Message Type : Failure
+Message : Couldn't send leave application email to vivek.swansi@perennialsys.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 02:33:14 AM IST,176 [12961] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 2:33 am
 Message Type : Success
 Message : Leave application email was sent to anuja.pendharka@perennialsys.com
+=======
+Thu 02 Mar 2017 01:47:11 PM IST,697 [41391] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:47 pm
+Message Type : Failure
+Message : Couldn't send leave application email to anuja.pendharka@perennialsys.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 02:33:16 AM IST,252 [12961] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 2:33 am
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
+=======
+Thu 02 Mar 2017 01:47:31 PM IST,773 [41391] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:47 pm
+Message Type : Failure
+Message : Couldn't send leave application email to pacharne.rahul92@gmail.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 02:33:19 AM IST,580 [12961] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 2:33 am
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+=======
+Thu 02 Mar 2017 01:47:52 PM IST,083 [41391] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 1:47 pm
+Message Type : Failure
+Message : Couldn't send leave application email to rahul.pacharne@perennialsys.com. Reason: Connection could not be established with host smtp.gmail.com [php_network_getaddresses: getaddrinfo failed: Name or service not known #0]
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 02:34:03 AM IST,324 [11860] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 2:34 am
+=======
+Thu 02 Mar 2017 03:41:02 PM IST,078 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 3:41 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 02:34:06 AM IST,672 [11860] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 2:34 am
+=======
+Thu 02 Mar 2017 03:41:08 PM IST,136 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 3:41 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to anuja.pendharka@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 02:34:08 AM IST,178 [11860] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 2:34 am
+=======
+Thu 02 Mar 2017 03:41:10 PM IST,264 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 3:41 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 02:34:11 AM IST,482 [11860] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 2:34 am
+=======
+Thu 02 Mar 2017 03:41:15 PM IST,513 [41997] INFO core.email - ========== Message Begins ==========
+
+Time : March 2, 2017, 3:41 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to vivek.swansi@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 02:37:15 AM IST,125 [13512] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 2:37 am
@@ -12495,39 +12838,63 @@ Message : Leave application email was sent to rahul.pacharne@perennialsys.com
 Thu 02 Mar 2017 01:49:27 PM IST,480 [2176] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 1:49 pm
+=======
+Fri 03 Mar 2017 12:15:28 PM IST,818 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 12:15 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 01:49:31 PM IST,640 [2176] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 1:49 pm
+=======
+Fri 03 Mar 2017 12:15:36 PM IST,108 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 12:15 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to anuja.pendharka@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 01:49:33 PM IST,541 [2176] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 1:49 pm
+=======
+Fri 03 Mar 2017 12:15:39 PM IST,301 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 12:15 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 01:49:37 PM IST,489 [2176] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 1:49 pm
+=======
+Fri 03 Mar 2017 12:15:46 PM IST,154 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 12:15 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to vivek.swansi@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 01:51:14 PM IST,342 [2176] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 1:51 pm
@@ -12558,12 +12925,18 @@ Message : Emails was sent to rahul.pacharne@perennialsys.com using smtp
 Thu 02 Mar 2017 01:53:45 PM IST,738 [3976] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 1:53 pm
+=======
+Fri 03 Mar 2017 01:05:39 PM IST,098 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 1:05 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 01:53:50 PM IST,015 [3976] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 1:53 pm
@@ -12587,28 +12960,48 @@ Thu 02 Mar 2017 03:50:22 PM IST,279 [3974] INFO core.email - ========== Message 
 Time : March 2, 2017, 3:50 pm
 Message Type : Success
 Message : Leave application email was sent to rahul.pacharne@perennialsys.com
+=======
+Fri 03 Mar 2017 01:05:44 PM IST,964 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 1:05 pm
+Message Type : Success
+Message : Leave application email was sent to vivek.swansi@perennialsys.com
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 03:50:27 PM IST,059 [3974] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 3:50 pm
+=======
+Fri 03 Mar 2017 01:05:50 PM IST,937 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 1:05 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to anuja.pendharka@perennialsys.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 03:50:29 PM IST,327 [3974] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 3:50 pm
+=======
+Fri 03 Mar 2017 01:05:53 PM IST,271 [45796] INFO core.email - ========== Message Begins ==========
+
+Time : March 3, 2017, 1:05 pm
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
 Message Type : Success
 Message : Leave application email was sent to pacharne.rahul92@gmail.com
 
 ========== Message Ends ==========
 
 
+<<<<<<< HEAD
 Thu 02 Mar 2017 03:50:34 PM IST,574 [3974] INFO core.email - ========== Message Begins ==========
 
 Time : March 2, 2017, 3:50 pm
@@ -18789,3 +19182,5 @@ Message : Couldn't send leave application email to vivek.swansi@perennialsys.com
 ========== Message Ends ==========
 
 
+=======
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65

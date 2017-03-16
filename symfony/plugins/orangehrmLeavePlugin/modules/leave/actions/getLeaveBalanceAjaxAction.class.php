@@ -86,8 +86,12 @@ class getLeaveBalanceAjaxAction extends sfAction {
             $endDateTimeStamp = strtotime($endDate);
             
             $leaveByPeriods = array();            
+<<<<<<< HEAD
 
 
+=======
+            
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
             if ($endDateTimeStamp && ($endDateTimeStamp > $startDateTimeStamp)) {
                 
                 $leaveParameterObject = $this->getLeaveParameterObject($empNumber, $leaveTypeId, $startDate, $endDate);
@@ -115,7 +119,11 @@ class getLeaveBalanceAjaxAction extends sfAction {
                             'days' => array()
                         );                        
                     }
+<<<<<<< HEAD
          //shubham->edit //can be used for sandwich date PL cancellation.            
+=======
+                    
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                     $localizedDate = set_datepicker_date_format($leaveDate);
                     if (in_array($leave->getStatus(), $holidays)) {                        
                         $leaveByPeriods[$leavePeriodNdx]['days'][$localizedDate] = array('length' => 0, 'balance' => false, 
@@ -126,7 +134,11 @@ class getLeaveBalanceAjaxAction extends sfAction {
                 }                 
             }            
             
+<<<<<<< HEAD
             // If request spans leave periods.
+=======
+            // If request spans leave periods
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
             $negativeBalance = false;
             
             if (count($leaveByPeriods) > 0) {
@@ -146,7 +158,11 @@ class getLeaveBalanceAjaxAction extends sfAction {
                     $leaveByPeriods[$i]['balance'] = $leaveBalanceObj;
                     
                     $leaveBalance = $leaveBalanceObj->getBalance();
+<<<<<<< HEAD
                     //shubham->edit subtraction of leave balance and applied days. Here!
+=======
+                    
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                     foreach ($days as $date => $leaveDateData) {
                         $leaveDateLength = $leaveDateData['length'];
                         if ($leaveDateLength > 0) {
@@ -170,8 +186,14 @@ class getLeaveBalanceAjaxAction extends sfAction {
                     'data' => $leaveByPeriods
                 );
             }
+<<<<<<< HEAD
 
             if (count($leaveByPeriods) == 0 || (count($leaveByPeriods) == 1 && !$negativeBalance)) {                
+=======
+             
+            if (count($leaveByPeriods) == 0 || (count($leaveByPeriods) == 1 && !$negativeBalance)) {
+                
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                 $endDateParam = !empty($endDateTimeStamp) ? $endDate : NULL;
                 $balance = $this->getLeaveEntitlementService()->getLeaveBalance($empNumber, $leaveTypeId, $startDate, $endDateParam);
                 $asAtDate = set_datepicker_date_format($startDate);
@@ -182,10 +204,14 @@ class getLeaveBalanceAjaxAction extends sfAction {
                     'multiperiod' => false,
                     'balance' => $balance,
                     'asAtDate' => $asAtDate
+<<<<<<< HEAD
                 ); 
   
                 //shubham->edit $leaveTypeID == 3. 3 is for non paid leave. 2-> paid leave.   
 
+=======
+                );                
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
             } elseif( $negativeBalance && $leaveTypeId == 3 ) {
               
                 $endDateParam = !empty($endDateTimeStamp) ? $endDate : NULL;
@@ -219,9 +245,36 @@ class getLeaveBalanceAjaxAction extends sfAction {
                     'negative' => false
                 ); 
             }
+<<<<<<< HEAD
  
             
             echo json_encode($result);
+=======
+         /*sum   
+            $dys=ceil(($endDateTimeStamp-$startDateTimeStamp)/86400);
+            
+            elseif($leaveTypeId == 1 && $dys>2)
+            {
+                    $balance = $this->getLeaveEntitlementService()->getLeaveBalance($empNumber, $leaveTypeId, $startDate, $endDateParam);
+                    $balance=$balance-2;
+                    $balance->setBalance($balance);
+                    $isMultiPeriod=true;
+                    $asAtDate = set_datepicker_date_format($startDate);
+                
+                    $result = array(
+                    'multiperiod' => $isMultiPeriod,
+                    'balance' => $balance,
+                    'asAtDate' => $asAtDate,
+                    'data' => $leaveByPeriods,
+                    'negative' => false);
+            
+            }
+            
+           */
+            //echo json_encode($balance); 
+            echo json_encode($result);
+
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
         }
 
         return sfView::NONE;

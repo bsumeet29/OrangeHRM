@@ -34,7 +34,11 @@ class ApplyLeaveForm extends sfForm {
     const START_DAY_ONLY = 'start';
     const END_DAY_ONLY = 'end';
     const START_AND_END_DAY = 'start_end';
+<<<<<<< HEAD
     const IN_BETWEEN_DAY = 'in_between_day';
+=======
+
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
     private $taskList;
 
     public function getConfigService() {
@@ -570,10 +574,15 @@ class ApplyLeaveForm extends sfForm {
             '' => __('None'), 
             //self::ALL_DAYS => __('All Days'), 
             self::START_DAY_ONLY => __('Start Day Only'), 
+<<<<<<< HEAD
             self::END_DAY_ONLY => __('End Day Only'),          
             self::START_AND_END_DAY => __('Start and End Day'),
             self::IN_BETWEEN_DAY => __('In Between'));
           
+=======
+            self::END_DAY_ONLY => __('End Day Only'),
+            self::START_AND_END_DAY => __('Start and End Day'));
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
        // $taskWidgets = array();
        
       /*  foreach ($taskList as $task)

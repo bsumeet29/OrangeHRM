@@ -15,8 +15,11 @@ class LeaveApplicationService extends AbstractLeaveAllocationService {
     protected $dispatcher;
     protected $logger;
     protected $applyWorkflowItem = null;
+<<<<<<< HEAD
     protected $plwithnobal = false;
     protected $elwithnobal = false;
+=======
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
     
     /**
      * Get LeaveEntitlementService
@@ -59,20 +62,33 @@ class LeaveApplicationService extends AbstractLeaveAllocationService {
      * 
      * @param LeaveParameterObject $leaveAssignmentData
      * @return boolean True if leave request is saved else false
+<<<<<<< HEAD
      * @throws LeaveAllocationServiceException When leave request Hexceeds work shift length. 
+=======
+     * @throws LeaveAllocationServiceException When leave request length exceeds work shift length. 
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
      * 
      * @todo Add LeaveParameterObject to the API
      */
     public function applyLeave(LeaveParameterObject $leaveAssignmentData) {
+<<<<<<< HEAD
     
         if ($this->hasOverlapLeave($leaveAssignmentData)) {
             return false;
         }
                  
+=======
+	
+        if ($this->hasOverlapLeave($leaveAssignmentData)) {
+            return false;
+        }
+    	         
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
         if ($this->applyMoreThanAllowedForADay($leaveAssignmentData)) {
             throw new LeaveAllocationServiceException('Failed to Submit: Work Shift Length Exceeded');
         }
 
+<<<<<<< HEAD
         return $this->saveLeaveRequest($leaveAssignmentData); 
         
 /*
@@ -80,6 +96,9 @@ class LeaveApplicationService extends AbstractLeaveAllocationService {
         $content = serialize($value);
         file_put_contents($f, $content);*/
 
+=======
+        return $this->saveLeaveRequest($leaveAssignmentData);        
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
     }
 
     /**
@@ -91,6 +110,7 @@ class LeaveApplicationService extends AbstractLeaveAllocationService {
      * 
      * @todo Don't catch general Exception. Catch specific one.
      */
+<<<<<<< HEAD
 
     protected function todocheckPL(LeaveParameterObject $leaveAssignmentData )
     {
@@ -211,13 +231,28 @@ class LeaveApplicationService extends AbstractLeaveAllocationService {
 
         if ($this->isEmployeeAllowedToApply($leaveType)) {
 
+=======
+    protected function saveLeaveRequest(LeaveParameterObject $leaveAssignmentData) {
+       $leaveRequest = $this->generateLeaveRequest($leaveAssignmentData);
+     
+        $leaveType = $this->getLeaveTypeService()->readLeaveType($leaveAssignmentData->getLeaveType());
+        // TODO: Move into if block
+        $leaves = $this->createLeaveObjectListForAppliedRange($leaveAssignmentData);
+        if ($this->isEmployeeAllowedToApply($leaveType)) {
+            
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
             $nonHolidayLeaveDays = array();
             $startDay = reset($leaves);
             $endDay = end($leaves);
             $holidayCount = 0;
             $holidays = array(Leave::LEAVE_STATUS_LEAVE_WEEKEND, Leave::LEAVE_STATUS_LEAVE_HOLIDAY);
+<<<<<<< HEAD
             foreach ($leaves as $k => $leave) {
                 if (($startDay->getStatus() == 1 && $endDay->getStatus() == 1) && ($leaveType->getId() == '3') && (in_array($leave->getStatus(), $holidays))) {
+=======
+          foreach ($leaves as $k => $leave) {
+              if(($startDay->getStatus() == 1 && $endDay->getStatus() == 1) && ($leaveType->getId()=='3')&&(in_array($leave->getStatus(), $holidays))){
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                     //echo"hii";exit;
                     $leave->setStatus(1);
                     $leave->setLengthHours(8.00);
@@ -229,20 +264,30 @@ class LeaveApplicationService extends AbstractLeaveAllocationService {
                     $nonHolidayLeaveDays[] = $leave;
                 }
             }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
             if (count($nonHolidayLeaveDays) > 0) {
                 $strategy = $this->getLeaveEntitlementService()->getLeaveEntitlementStrategy(); 
                 $employee = $this->getLoggedInEmployee();
                 $empNumber = $employee->getEmpNumber();
                 $entitlements = $strategy->handleLeaveCreate($empNumber, $leaveType->getId(), $nonHolidayLeaveDays, false);
                 if (!$this->allowToExceedLeaveBalance() && $entitlements == false) {
+<<<<<<< HEAD
                      if($leaveType->getId()!= '3' && $leaveType->getId() != '2' && $leaveType->getId() != '1' ) {
                         // if it is not a NPL                        
                         throw new LeaveAllocationServiceException('Leave Balance Exceeded');
                     }
 
+=======
+                     if($leaveType->getId()!= '3') { 
+                        // if it is not a NPL                        
+                        throw new LeaveAllocationServiceException('Leave Balance Exceeded');
+                    }
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                 }
             }            
         
@@ -251,7 +296,11 @@ class LeaveApplicationService extends AbstractLeaveAllocationService {
                     $user = sfContext::getInstance()->getUser();
                     $loggedInUserId = $user->getAttribute('auth.userId');
                     $loggedInEmpNumber = $user->getAttribute('auth.empNumber');
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                     $leaveRequest = $this->getLeaveRequestService()->saveLeaveRequest($leaveRequest, $leaves, $entitlements);
                     $leaveComment = trim($leaveRequest->getComments());
                    

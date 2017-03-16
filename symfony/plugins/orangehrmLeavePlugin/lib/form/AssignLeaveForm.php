@@ -29,7 +29,11 @@ class AssignLeaveForm extends sfForm {
     const START_DAY_ONLY = 'start';
     const END_DAY_ONLY = 'end';
     const START_AND_END_DAY = 'start_end';
+<<<<<<< HEAD
     const IN_BETWEEN = 'asdsad';  
+=======
+            
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
     protected $leavePeriodService;    
     protected $configService;
 
@@ -270,13 +274,21 @@ class AssignLeaveForm extends sfForm {
         $today = strtotime($today);
         $date = strtotime('-3 days',$today);
         $mindate = date('d-m-Y',$date);
+<<<<<<< HEAD
         $partialDayChoices = array(
+=======
+        print_r("Test2 " + $mindate);
+        $partialDayChoices = array( 
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
             '' => __('None'), 
            // self::ALL_DAYS => __('All Days'), 
             self::START_DAY_ONLY => __('Start Day Only'), 
             self::END_DAY_ONLY => __('End Day Only'),
+<<<<<<< HEAD
             self::IN_BETWEEN => __('IN bet'),
             
+=======
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
             self::START_AND_END_DAY => __('Start and End Day'));
         $workType=array(
             ''=>__('Select'),

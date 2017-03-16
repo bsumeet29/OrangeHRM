@@ -38,10 +38,15 @@ class getEmployeeListAjaxAction  extends sfAction{
             $requiredPermissions = json_decode($requiredPermissions);
         }
         $properties = array("empNumber","firstName", "middleName", "lastName", "termination_id");
+<<<<<<< HEAD
         
         $employeeNameList = UserRoleManagerFactory::getUserRoleManager()->getAccessibleEntityProperties('Employee', 
                 $properties, null, null, array(), array(),$requiredPermissions);
 
+=======
+        $employeeNameList = UserRoleManagerFactory::getUserRoleManager()->getAccessibleEntityProperties('Employee', 
+                $properties, null, null, array(), array(),$requiredPermissions);
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
         foreach ($employeeNameList as $id => $attributes) {
             $name = trim(trim($attributes['firstName'] . ' ' . $attributes['middleName'],' ') . ' ' . $attributes['lastName']);
             if ($attributes['termination_id']) {

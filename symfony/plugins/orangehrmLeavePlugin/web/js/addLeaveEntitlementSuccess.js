@@ -8,10 +8,21 @@
             $('ol#filter li:not(:first)').hide();
         }        
     }
+<<<<<<< HEAD
 
     function updateFilterMatches() {     
         matchingCount = false;
         var params = '';      
+=======
+    
+    
+    function updateFilterMatches() {
+        
+        matchingCount = false;
+        
+        var params = '';
+        
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
         $('ol#filter li:not(:first)').find('input,select').each(function(index, element) {
             var name = $(this).attr('name');
             name = name.replace('entitlements[filters][', '');
@@ -19,7 +30,12 @@
             var value = $(this).val();
 
             params = params + '&' + name + '=' + value;
+<<<<<<< HEAD
         });       
+=======
+        });
+        
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
         $.ajax({
             type: 'GET',
             url: getCountUrl,
@@ -27,6 +43,10 @@
             dataType: 'json',
             success: function(data) {
                 filterMatchingEmployees = data;
+<<<<<<< HEAD
+=======
+                
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                 $('span#ajax_count').remove();
                 var text = lang_matchesMany.replace('%count%', data);
                 if (data == 1) {
@@ -39,7 +59,12 @@
                 $('ol#filter li:first').append('<span id="ajax_count">(' + text + ')</span>');
             }
         });
+<<<<<<< HEAD
     }   
+=======
+    }
+    
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
     function fetchEmployees(offset) {
         var params = '';
         
@@ -65,7 +90,10 @@
             url: getEmployeeUrl,
             data: params,
             dataType: 'json',
+<<<<<<< HEAD
 //shubham was here
+=======
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
             success: function(results) {                
                 var offset = parseInt(results.offset, 10);
                 var pageSize = parseInt(results.pageSize, 10);
@@ -88,11 +116,22 @@
                     for (var i = 0; i < count; i++) {
                         rows++;                        
                         var css = rows % 2 ? "even" : "odd";
+<<<<<<< HEAD
                         var decodedName = $("<div/>").text(data[i][0]).html();
                         var oldValue = parseFloat(data[i][1]);
                         var newValue = parseFloat(data[i][2]);
                         html = html + '<tr class="' + css + '"><td>'+decodedName+'</td><td>'+oldValue.toFixed(2)+'</td><td>'+newValue.toFixed(2)+'</td></tr>';
                     }
+=======
+
+                        var decodedName = $("<div/>").text(data[i][0]).html();
+                        var oldValue = parseFloat(data[i][1]);
+                        var newValue = parseFloat(data[i][2]);
+                        
+                        html = html + '<tr class="' + css + '"><td>'+decodedName+'</td><td>'+oldValue.toFixed(2)+'</td><td>'+newValue.toFixed(2)+'</td></tr>';
+                    }
+
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                     $('div#employee_list table.table').append(html);
                     
                     if ((count == pageSize)) {

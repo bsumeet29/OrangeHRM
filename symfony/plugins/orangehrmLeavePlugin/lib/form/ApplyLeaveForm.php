@@ -34,8 +34,12 @@ class ApplyLeaveForm extends sfForm {
     const START_DAY_ONLY = 'start';
     const END_DAY_ONLY = 'end';
     const START_AND_END_DAY = 'start_end';
+<<<<<<< HEAD
     const IN_BETWEEN_DAY = 'In_between';
 
+=======
+    const IN_BETWEEN = 'in_between';
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
     private $taskList;
 
     public function getConfigService() {
@@ -261,11 +265,14 @@ class ApplyLeaveForm extends sfForm {
                             }                         
                         }
                     }
+<<<<<<< HEAD
                     print_r("12345");
                     if ($partialDayOption == 'In_between') {
                         $errorList['In_between'] = "Try different app";
                         //echo "<script type='text/javascript'>alert('$message');</script>";
                     }
+=======
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
                 }
 		/*$cd = new DateTime('now',new DateTimeZone('Asia/Kolkata'));			
 		if (($fromDateTimeStamp - $cd) < 7) {
@@ -577,8 +584,14 @@ class ApplyLeaveForm extends sfForm {
             //self::ALL_DAYS => __('All Days'), 
             self::START_DAY_ONLY => __('Start Day Only'), 
             self::END_DAY_ONLY => __('End Day Only'),
+<<<<<<< HEAD
             self::START_AND_END_DAY => __('Start and End Day'));
             //self::IN_BETWEEN_DAY=> __('In between days!'));
+=======
+            self::START_AND_END_DAY => __('Start and End Day'),
+            self::IN_BETWEEN => __('In Between Days')
+            );
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
        // $taskWidgets = array();
        
       /*  foreach ($taskList as $task)

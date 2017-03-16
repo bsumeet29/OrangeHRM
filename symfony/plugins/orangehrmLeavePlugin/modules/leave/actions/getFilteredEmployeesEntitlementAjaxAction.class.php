@@ -93,7 +93,10 @@ class getFilteredEmployeesEntitlementAjaxAction  extends sfAction {
 //                 $oldValue=$oldValue-$usedday;
 //                 }
 //            } 
+<<<<<<< HEAD
 //shubham was here!
+=======
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
             foreach ($entitlementList as $existingEntitlement) {
                
                 $oldValue += $existingEntitlement->getNoOfDays();

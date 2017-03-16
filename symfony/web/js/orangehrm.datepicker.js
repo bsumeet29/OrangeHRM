@@ -13,7 +13,11 @@ function DayMarker(optionList){
         requestUrl: false // is request url defined
     };
 
+<<<<<<< HEAD
     var holidayList = ["01-03-2017","17-03-02"]; // store holiday list Public method
+=======
+    var holidayList = []; // store holiday list Public method
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
     var daysOffList = []; // store holiday list
     var jqValidatorDateFormat = "yy-mm-dd"
 

@@ -15,7 +15,12 @@ class DetailedLeaveListConfigurationFactory extends ohrmListConfigurationFactory
         $header6 = new LeaveListHeader();
         $header7 = new LeaveListHeader();
         $header8 = new LeaveListHeader();
+<<<<<<< HEAD
       //  $header9 = new LeaveListHeader();
+=======
+        $header9 = new LeaveListHeader();
+        
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
         $header1->populateFromArray(array(
             'name' => 'Date',
             'width' => '20%',
@@ -24,7 +29,18 @@ class DetailedLeaveListConfigurationFactory extends ohrmListConfigurationFactory
             'textAlignmentStyle' => 'left',
             'elementProperty' => array('getter' => 'getFormattedLeaveDateToView'),
         ));
+<<<<<<< HEAD
 
+=======
+        $header9->populateFromArray(array(
+            'name' => 'Weekdays Included',
+            'width' => '20%',
+            'isSortable' => false,
+            'elementType' => 'label',
+            'textAlignmentStyle' => 'left',
+            //'elementProperty' => array('getter' => 'getFormattedLeaveDateToView'),
+        ));
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
         $header3->populateFromArray(array(
             'name' => 'Leave Type',
             'width' => '10%',
@@ -150,7 +166,11 @@ class DetailedLeaveListConfigurationFactory extends ohrmListConfigurationFactory
             ),
         ));
 
+<<<<<<< HEAD
         $this->headers = array($header1, $header3, $header8, $header4, $header5,$header6, $header7);
+=======
+        $this->headers = array($header1, $header3, $header8, $header4, $header5,$header6, $header7,$header6);
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
     }
     
     public function getClassName() {

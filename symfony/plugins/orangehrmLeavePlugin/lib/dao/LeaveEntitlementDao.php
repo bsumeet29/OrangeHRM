@@ -375,7 +375,11 @@ class LeaveEntitlementDao extends BaseDao {
         }
     }
     
+<<<<<<< HEAD
     public function bulkAssignLeaveEntitlements($employeeNumbers, LeaveEntitlement $leaveEntitlement,$forward/*=null*/) {
+=======
+    public function bulkAssignLeaveEntitlements($employeeNumbers, LeaveEntitlement $leaveEntitlement,$forward=null) {
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
         $conn = Doctrine_Manager::connection();
         $conn->beginTransaction();
 
@@ -404,8 +408,13 @@ class LeaveEntitlementDao extends BaseDao {
              $leaveEntitlementSearchParameterHolder->setCarryForward($forward);
              $entitlementList = $this->searchLeaveEntitlements($leaveEntitlementSearchParameterHolder);
              $oldentitlementList=$entitlementList;
+<<<<<<< HEAD
             //echo "<pre>";
             //print_r($oldentitlementList);
+=======
+            // echo "<pre>";
+           //  print_r($oldentitlementList);
+>>>>>>> eaeb1055a099d218324d9524e085cad697e82f65
             // exit();
              }else{
               $entitlementList = $this->searchLeaveEntitlements($leaveEntitlementSearchParameterHolder); 
