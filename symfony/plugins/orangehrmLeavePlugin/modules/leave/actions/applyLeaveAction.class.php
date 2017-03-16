@@ -102,27 +102,22 @@ class applyLeaveAction extends baseLeaveAction {
             $this->getUser()->setFlash('warning.nofade', __('No Leave Types with Leave Balance'));
         }
 
-	print_r("pahila error nahi ala");
-        $this->applyLeaveForm = $this->getApplyLeaveForm($this->leaveTypes,$this->previousTasks);
+	    $this->applyLeaveForm = $this->getApplyLeaveForm($this->leaveTypes,$this->previousTasks);
         $this->overlapLeaves = 0;
         $this->workshiftLengthExceeded = true;
 
         //this section is to save leave request
       //  echo"<pre>";print_r($request);exit;
         if ($request->isMethod('post')) {
-		print_r("Dusra error nahi ala");
-                                    
+	                                
 		$this->applyLeaveForm->bind($request->getParameter($this->applyLeaveForm->getName()));
             if ($this->applyLeaveForm->isValid()) {
-			print_r("thisra error nahi ala<br>");
-                        
+	                    
                 try {
                     $leaveParameters = $this->getLeaveParameterObject($this->applyLeaveForm->getValues());
-                    print_r("4 error nahi ala<br>");
-                        print_r("<br>  LEavceparamter Value " + $leaveParameters);
+                  
 		$success = $this->getLeaveApplicationService()->applyLeave($leaveParameters);
-			print_r($success + " Success v alues");
-                    if ($success) {
+	                if ($success) {
                         $this->getUser()->setFlash('success', __('Successfully Submitted'));
                 //                            $this->redirect('leave/viewMyLeaveList/reset/1');
                         header("Location:viewMyLeaveList/reset/1");

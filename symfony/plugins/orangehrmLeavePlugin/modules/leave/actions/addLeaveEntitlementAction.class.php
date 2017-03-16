@@ -122,7 +122,7 @@ class addLeaveEntitlementAction extends sfAction {
                    }
                    
                    
-                   
+                  
                     $this->dispatcher->notify(new sfEvent($this, LeaveEvents::ENTITLEMENT_BULK_ADD, 
                             array('entitlement' => $leaveEntitlement,
                                   'employeeNumbers' => $employeeNumbers)));

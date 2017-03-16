@@ -330,9 +330,10 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
         $('#applyleave_partialDays').change(function () {
             handlePartialDayChange(true);
         });
-
+//shubham was here
         if (trim($("#applyleave_txtFromDate").val()) == displayDateFormat || trim($("#applyleave_txtToDate").val()) == displayDateFormat
                 || trim($("#applyleave_txtFromDate").val()) == '' || trim($("#applyleave_txtToDate").val()) == '') {
+
             showTimeControls(false, false);
         } else if (trim($("#applyleave_txtFromDate").val()) == trim($("#applyleave_txtToDate").val())) {
             showTimeControls(true, false);
@@ -380,8 +381,10 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
 
                             var leavePeriods = data.data;
                             var leavePeriodCount = leavePeriods.length;
+//shubham was here  -> this code was here -> data.negative ? lang_BalanceNotSufficient :
+                            //var linkTxt = data.negative ? lang_BalanceNotSufficient :lang_details;
+                            var linkTxt = lang_details;
 
-                            var linkTxt = data.negative ? lang_BalanceNotSufficient : lang_details;
                             var balanceTxt = leavePeriodCount == 1 ? leavePeriods[0].balance.balance.toFixed(2) : '';
                             var linkCss = data.negative ? ' class="error" ' : "";
 
@@ -664,29 +667,38 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
             var valid = true;
             var today = new Date();
             var dd = today.getDate() + 7;
+            var t = today.getDate() + 0;
             var months = new Array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12');
             var month = months[today.getMonth()];
-
             if (dd < 10) {
                 dd = '0' + dd;
             }
+            if(t < 10){
+                t = '0' + t;
+            }
             var nextWeek = dd + '-' + month + '-' + today.getFullYear();
+            var todayy = t + '-' + month + '-' + today.getFullYear();
             if (today.getDate() < 10) {
                 var todaysDate = today.getFullYear() + '-' + month + '-0' + today.getDate();
             } else {
                 var todaysDate = today.getFullYear() + '-' + month + '-' + today.getDate();
             }
-
+            
             if ($('#applyleave_txtFromDate').val()) {
                 var v = $('#applyleave_leaveBalance').text();
                 v = v.substr(0, v.indexOf("."));
-                var str1 = $('#applyleave_txtFromDate').val();
+                var str1 = $('#applyleave_txtFromDate').val();              
                 var leaveDate = reverse(str1);
                 var nextWeekDate = reverse(nextWeek);
+                var todayy = reverse(todayy);
+
                 if (leaveDate > nextWeekDate) {
                     valid = true;
                 } else if (leaveDate < nextWeekDate && ($('#applyleave_txtLeaveType').val() === '2' || $('#applyleave_txtLeaveType').val() === '4')) {
-                    valid = false;
+                        if(leaveDate >= todayy)
+                            valid = false;
+                        else
+                            valid = true;
                 }
             }
             return valid;
@@ -708,7 +720,6 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
     function showTimeControls(showOneDay, showMultiDay) {
 
         var oneDayControlIds = ['applyleave_duration_duration'];
-
         $.each(oneDayControlIds, function (index, value) {
 
             if (showOneDay) {
@@ -738,7 +749,6 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
         var partialDay = $('#applyleave_partialDays').val();
         var startLabel = false;
         var endLabel = false;
-
         if (!showMultiDay || partialDay === '') {
             $('#applyleave_firstDuration_duration').parent('li').hide();
             $('#applyleave_secondDuration_duration').parent('li').hide();
@@ -756,7 +766,6 @@ use_stylesheet(plugin_web_path('orangehrmLeavePlugin', 'css/assignLeaveSuccess.c
             startLabel = lang_StartDay;
             endLabel = lang_EndDay;
         }
-
         if (startLabel) {
             $('#applyleave_firstDuration_duration').parent('li').children('label:first-child').text(startLabel);
         }

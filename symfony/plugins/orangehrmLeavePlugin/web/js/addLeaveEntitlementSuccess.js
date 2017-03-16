@@ -8,14 +8,10 @@
             $('ol#filter li:not(:first)').hide();
         }        
     }
-    
-    
-    function updateFilterMatches() {
-        
+
+    function updateFilterMatches() {     
         matchingCount = false;
-        
-        var params = '';
-        
+        var params = '';      
         $('ol#filter li:not(:first)').find('input,select').each(function(index, element) {
             var name = $(this).attr('name');
             name = name.replace('entitlements[filters][', '');
@@ -23,8 +19,7 @@
             var value = $(this).val();
 
             params = params + '&' + name + '=' + value;
-        });
-        
+        });       
         $.ajax({
             type: 'GET',
             url: getCountUrl,
@@ -32,7 +27,6 @@
             dataType: 'json',
             success: function(data) {
                 filterMatchingEmployees = data;
-                
                 $('span#ajax_count').remove();
                 var text = lang_matchesMany.replace('%count%', data);
                 if (data == 1) {
@@ -45,8 +39,7 @@
                 $('ol#filter li:first').append('<span id="ajax_count">(' + text + ')</span>');
             }
         });
-    }
-    
+    }   
     function fetchEmployees(offset) {
         var params = '';
         
@@ -72,6 +65,7 @@
             url: getEmployeeUrl,
             data: params,
             dataType: 'json',
+//shubham was here
             success: function(results) {                
                 var offset = parseInt(results.offset, 10);
                 var pageSize = parseInt(results.pageSize, 10);
@@ -94,14 +88,11 @@
                     for (var i = 0; i < count; i++) {
                         rows++;                        
                         var css = rows % 2 ? "even" : "odd";
-
                         var decodedName = $("<div/>").text(data[i][0]).html();
                         var oldValue = parseFloat(data[i][1]);
                         var newValue = parseFloat(data[i][2]);
-                        
                         html = html + '<tr class="' + css + '"><td>'+decodedName+'</td><td>'+oldValue.toFixed(2)+'</td><td>'+newValue.toFixed(2)+'</td></tr>';
                     }
-
                     $('div#employee_list table.table').append(html);
                     
                     if ((count == pageSize)) {

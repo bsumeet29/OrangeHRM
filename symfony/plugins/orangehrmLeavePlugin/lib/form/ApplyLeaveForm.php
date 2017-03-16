@@ -570,7 +570,7 @@ class ApplyLeaveForm extends sfForm {
      * @return array
      */
     protected function getFormWidgets($previousTasks) {
-        $mindate = date('d-m-Y');
+        $mindate = date('d-m-Y',strtotime('-3 days'));
         $count = count($previousTasks);
         $partialDayChoices = array(
             '' => __('None'), 
